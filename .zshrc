@@ -16,8 +16,9 @@ fi
 # Remove .DS_Store files
 alias dsrm="find . -name '.DS_Store' -type f -delete"
 
-# ls
-alias la='ls -a'
+# g++
+
+alias g++='g++ -Wall -std=c++11'
 
 # git
 alias ga='git add'
@@ -37,6 +38,9 @@ alias gr='git reset'
 alias grh='git reset HEAD~'
 alias grm='git rm'
 alias gs='git status'
+
+# ls
+alias la='ls -a'
 
 # repeat
 alias 5x='repeat 5'
@@ -66,7 +70,6 @@ alias psq='APP_ENV=QA parallel_split_test'
 alias rkd='APP_ENV=DEV rake'
 alias rkp='APP_ENV=PROD rake'
 alias rkq='APP_ENV=QA rake'
-
 
 # Go
 # ==
