@@ -45,4 +45,10 @@
   "workbench.colorTheme": "One Dark Pro",
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.tabSize": 2,
+  },
 }
