@@ -3,12 +3,17 @@
   "C_Cpp.autoAddFileAssociations": false,
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: WebKit, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, AccessModifierOffset: -2 }",
   "C_Cpp.clang_format_style": "{ BasedOnStyle: WebKit, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, AccessModifierOffset: -2 }",
+  "C_Cpp.default.cppStandard": "c++11",
   "editor.fontFamily": "Monaco, 'Courier New', monospace",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -40,20 +45,4 @@
   "workbench.colorTheme": "One Dark Pro",
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "C_Cpp.default.cppStandard": "c++11"
 }
