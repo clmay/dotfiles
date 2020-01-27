@@ -108,10 +108,10 @@ export NVM_DIR="$HOME/.nvm"
 # OpenSSL
 # =======
 
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig:usr/local/lib/pkgconfig"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:usr/local/lib/pkgconfig"
 
 
 # Python
@@ -126,8 +126,8 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl)"
 export RSPEC_RETRY_RETRY_COUNT=0
 
 # Rust
