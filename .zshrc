@@ -34,10 +34,16 @@ alias gmv='git mv'
 alias gp='git push'
 alias gpl='git pull'
 alias gpu='git push -u origin HEAD'
-alias gr='git reset'
-alias grh='git reset HEAD~'
 alias grm='git rm'
 alias gs='git status'
+
+gr () {
+  git reset --soft HEAD~$1
+}
+
+grh () {
+  # todo: implement for hard reset, but wait awhile to "unlearn" previous alias
+}
 
 # ls
 alias la='ls -a'
