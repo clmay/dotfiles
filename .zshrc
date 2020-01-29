@@ -34,10 +34,11 @@ alias gmv='git mv'
 alias gp='git push'
 alias gpl='git pull'
 alias gpu='git push -u origin HEAD'
+alias gr='git reset'
 alias grm='git rm'
 alias gs='git status'
 
-gr () {
+grs () {
   git reset --soft HEAD~$1
 }
 
