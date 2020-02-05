@@ -1,0 +1,10 @@
+{
+	"Template declaration": {
+		"prefix": "template",
+		"body": [
+			"template <typename $1>",
+			"$2"
+		],
+		"description": "Insert a template declaration"
+	}
+}
