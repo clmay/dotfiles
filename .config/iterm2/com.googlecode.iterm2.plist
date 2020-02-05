@@ -4,6 +4,8 @@
 <dict>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -160,10 +162,12 @@
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>880 726 799 448 -1792 -898 1792 1097 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>586 528 620 392 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1222 222 570 875 0 0 1792 1097 </string>
+	<string>1142 124 650 973 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1222 222 570 875 0 0 1792 1097 </string>
+	<string>1910 406 650 973 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1075,18 +1079,19 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.7</string>
+		<string>3.3.8</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1792, 1120}}</string>
 		<key>topLeft</key>
-		<string>{177, 914}</string>
+		<string>{176, 915}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>7C7765C1-BF43-4408-8CFC-A0936BBFB639</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>67</integer>
+	<integer>95</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1865,8 +1870,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-25T23:59:06Z</date>
+	<date>2020-02-03T18:28:30Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
@@ -1889,7 +1896,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
