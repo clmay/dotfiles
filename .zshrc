@@ -44,7 +44,7 @@ grs () {
 }
 
 grh () {
-  # todo: implement for hard reset, but wait awhile to "unlearn" previous alias
+  git reset --hard HEAD~$1
 }
 
 # ls
