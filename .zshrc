@@ -2,14 +2,13 @@
 # Executes commands at the start of an interactive session.
 #
 
-# Personal aliases
+# Aliases
 # ================
 
 # Remove .DS_Store files
 alias dsrm="find . -name '.DS_Store' -type f -delete"
 
 # g++
-
 alias g++='g++ -Wall -std=c++11'
 
 # git
@@ -73,56 +72,38 @@ alias rkq='APP_ENV=QA rake'
 
 # Go
 # ==
-
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOPATH/bin:$PATH"
 
-
 # Haskell
 # =======
-
 export PATH="$HOME/.local/bin:$PATH" # for Stack
-
-
-# Heroku
-# ======
-
-HEROKU_AC_ZSH_SETUP_PATH=/Users/clmay/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
-
 
 # Homebrew
 # ========
-
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-
 
 # NVM
 # ===
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
-
 # OpenSSL
 # =======
-
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:usr/local/lib/pkgconfig"
 
-
 # Python
 # ======
-
 export PATH="$HOME/Library/Python/3.7/bin:$PATH" # for pipenv
 export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
 
 # Ruby
 # =====
-
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
@@ -132,10 +113,8 @@ export RSPEC_RETRY_RETRY_COUNT=0
 
 # Rust
 # ====
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # VS Code
 # =======
-
 export VISUAL="/usr/local/bin/code"
