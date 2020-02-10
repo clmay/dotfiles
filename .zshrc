@@ -1,13 +1,10 @@
-# Profiling
-zmodload zsh/zprof
-# measure shell load time with `5x {time zsh -i -c exit}`
-
 # Prompt
+# ======
 autoload -U promptinit; promptinit
 prompt pure
 
 # Aliases
-# ================
+# =======
 
 # Remove .DS_Store files
 alias dsrm="find . -name '.DS_Store' -type f -delete"
@@ -131,7 +128,15 @@ export RSPEC_RETRY_RETRY_COUNT=0
 # ====
 export PATH="$HOME/.cargo/bin:$PATH"
 
-
 # VS Code
 # =======
 export VISUAL="/usr/local/bin/code"
+
+# Profiling
+# =========
+
+# Enable profiling with:
+# zmodload zsh/zprof
+
+# Measure shell load time with:
+# 5x {time zsh -i -c exit}
