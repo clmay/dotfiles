@@ -1,3 +1,5 @@
+zmodload zsh/zprof
+
 # Prompt
 
 autoload -U promptinit; promptinit
@@ -87,9 +89,28 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # NVM
 # ===
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+
+
+nvm() {
+  unset -f nvm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+}
+
+node() {
+  unset -f node
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  node "$@"
+}
+
+npm() {
+  unset -f npm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  npm "$@"
+}
 
 # OpenSSL
 # =======
