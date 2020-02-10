@@ -89,25 +89,35 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # NVM
 # ===
+
+# from https://gist.github.com/fl0w/07ce79bd44788f647deab307c94d6922
+lazynvm() {
+  unset -f nvm node npm npx
+  export NVM_DIR=~/.nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+  if [ -f "$NVM_DIR/bash_completion" ]; then
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+  fi
+}
+
 nvm() {
-  unset -f nvm
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  lazynvm
   nvm "$@"
 }
 
 node() {
-  unset -f node
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  lazynvm
   node "$@"
 }
 
 npm() {
-  unset -f npm
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  lazynvm
   npm "$@"
+}
+
+npx() {
+  lazynvm
+  npx "$@"
 }
 
 # OpenSSL
