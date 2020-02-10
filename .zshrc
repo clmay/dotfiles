@@ -89,9 +89,6 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # NVM
 # ===
-
-
-
 nvm() {
   unset -f nvm
   export NVM_DIR="$HOME/.nvm"
