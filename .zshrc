@@ -1,7 +1,7 @@
+# Profiling
 zmodload zsh/zprof
 
 # Prompt
-
 autoload -U promptinit; promptinit
 prompt pure
 
