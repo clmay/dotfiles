@@ -1,6 +1,7 @@
-#
-# Executes commands at the start of an interactive session.
-#
+# Prompt
+
+autoload -U promptinit; promptinit
+prompt pure
 
 # Aliases
 # ================
@@ -114,6 +115,7 @@ export RSPEC_RETRY_RETRY_COUNT=0
 # Rust
 # ====
 export PATH="$HOME/.cargo/bin:$PATH"
+
 
 # VS Code
 # =======
