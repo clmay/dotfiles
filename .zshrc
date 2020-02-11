@@ -80,6 +80,7 @@ export PATH="$GOBIN:$PATH"
 # Homebrew
 # ========
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+export HOMEBREW_BUNDLE_NO_LOCK=true
 
 # NVM
 # ===
