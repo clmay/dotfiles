@@ -117,6 +117,8 @@ export VISUAL="/usr/local/bin/code"
 
 # Enable profiling with:
 # zmodload zsh/zprof
+# Then run:
+# zprof
 
 # Measure shell load time with:
 # 5x {time zsh -i -c exit}
