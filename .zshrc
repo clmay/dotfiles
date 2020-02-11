@@ -75,11 +75,7 @@ alias rkq='APP_ENV=QA rake'
 # ==
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
-export PATH="$GOPATH/bin:$PATH"
-
-# Haskell
-# =======
-export PATH="$HOME/.local/bin:$PATH" # for Stack
+export PATH="$GOBIN:$PATH"
 
 # Homebrew
 # ========
@@ -103,30 +99,13 @@ for cmd in "${NODE_GLOBALS[@]}"; do
     eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
 done
 
-# OpenSSL
-# =======
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:usr/local/lib/pkgconfig"
-
-# Python
-# ======
-export PATH="$HOME/Library/Python/3.7/bin:$PATH" # for pipenv
-export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
-
 # Ruby
 # =====
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
 
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl)"
 export RSPEC_RETRY_RETRY_COUNT=0
-
-# Rust
-# ====
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # VS Code
 # =======
