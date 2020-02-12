@@ -26,6 +26,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "html.format.wrapLineLength": 80,
+  "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.extension.toc.levels": "3..6",
   "prettier.proseWrap": "always",
