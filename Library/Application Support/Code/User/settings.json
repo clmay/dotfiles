@@ -38,6 +38,7 @@
       "useBundler": true,
     },
   },
+  "ruby.useBundler": true,
   "search.exclude": {
     "**/.git": true,
   },
