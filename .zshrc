@@ -119,6 +119,10 @@ fi
 
 export RSPEC_RETRY_RETRY_COUNT=0
 
+# Rust
+# ====
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # VS Code
 # =======
 export VISUAL="/usr/local/bin/code"
