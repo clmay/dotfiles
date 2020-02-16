@@ -102,6 +102,11 @@ for cmd in "${NODE_GLOBALS[@]}"; do
     eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
 done
 
+# Python
+# ======
+export PATH="$HOME/Library/Python/3.7/bin:$PATH" # for pipenv
+export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
+
 # Ruby
 # =====
 if which rbenv > /dev/null; then
