@@ -79,6 +79,10 @@ export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 
+# Haskell
+# =======
+export PATH="$HOME/.local/bin:$PATH" # for Stack
+
 # Homebrew
 # ========
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
