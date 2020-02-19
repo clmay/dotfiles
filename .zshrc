@@ -6,8 +6,9 @@ prompt pure
 # Aliases
 # =======
 
-# Remove .DS_Store files
-alias dsrm="find . -name '.DS_Store' -type f -delete"
+dsrm () {
+  find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
+}
 
 # g++
 alias g++='g++ -Wall -std=c++11'
@@ -52,6 +53,10 @@ alias 50x='repeat 50'
 
 # O.C. Tanner aliases
 # ===================
+
+nd () {
+  DOCKER=0 $1
+}
 
 alias rs='bundle exec rspec'
 alias rc='bundle exec rubocop'
