@@ -35,11 +35,11 @@ alias grm='git rm'
 alias gs='git status'
 
 grs () {
-  git reset --soft HEAD~$1
+  git reset --soft HEAD~"$1"
 }
 
 grh () {
-  git reset --hard HEAD~$1
+  git reset --hard HEAD~"$1"
 }
 
 # ls
@@ -54,12 +54,10 @@ alias 50x='repeat 50'
 # O.C. Tanner aliases
 # ===================
 
-nd () {
-  DOCKER=0 $1
-}
-
 alias rs='bundle exec rspec'
 alias rc='bundle exec rubocop'
+
+alias nd='DOCKER=false'
 
 alias rd='APP_ENV=DEV rspec'
 alias rp='APP_ENV=PROD rspec'
