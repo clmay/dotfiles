@@ -76,16 +76,6 @@ alias rkd='APP_ENV=DEV rake'
 alias rkp='APP_ENV=PROD rake'
 alias rkq='APP_ENV=QA rake'
 
-# Go
-# ==
-export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
-export PATH="$GOBIN:$PATH"
-
-# Haskell
-# =======
-export PATH="$HOME/.local/bin:$PATH" # for Stack
-
 # Homebrew
 # ========
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
@@ -109,11 +99,6 @@ for cmd in "${NODE_GLOBALS[@]}"; do
     eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
 done
 
-# Python
-# ======
-export PATH="$HOME/Library/Python/3.7/bin:$PATH" # for pipenv
-export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
-
 # Ruby
 # =====
 if which rbenv > /dev/null; then
@@ -121,10 +106,6 @@ if which rbenv > /dev/null; then
 fi
 
 export RSPEC_RETRY_RETRY_COUNT=0
-
-# Rust
-# ====
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # VS Code
 # =======
