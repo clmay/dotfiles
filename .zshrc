@@ -55,7 +55,7 @@ alias 50x='repeat 50'
 # ===================
 
 alias rs='bundle exec rspec'
-alias rc='bundle exec rubocop'
+# alias rc='bundle exec rubocop'
 
 alias nd='DOCKER=false'
 
@@ -76,35 +76,9 @@ alias rkd='APP_ENV=DEV rake'
 alias rkp='APP_ENV=PROD rake'
 alias rkq='APP_ENV=QA rake'
 
-# Homebrew
-# ========
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-export HOMEBREW_BUNDLE_NO_LOCK=true
 
-# NVM
-# ===
-
-# from https://www.reddit.com/r/node/comments/4tg5jg/lazy_load_nvm_for_faster_shell_start/d5ib9fs/
-declare -a NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' | xargs -n1 basename | sort | uniq`)
-
-NODE_GLOBALS+=("node")
-NODE_GLOBALS+=("nvm")
-
-load_nvm () {
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-}
-
-for cmd in "${NODE_GLOBALS[@]}"; do
-    eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
-done
-
-# Ruby
+# RSpec
 # =====
-if which rbenv > /dev/null; then
-  eval "$(rbenv init -)";
-fi
-
 export RSPEC_RETRY_RETRY_COUNT=0
 
 # VS Code
