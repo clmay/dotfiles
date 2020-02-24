@@ -1,5 +1,10 @@
-# Prompt
-# ======
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/chase.may/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
 autoload -U promptinit; promptinit
 prompt pure
 
