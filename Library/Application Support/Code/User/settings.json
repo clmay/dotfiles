@@ -26,6 +26,8 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "gitlens.defaultDateFormat": "YYYY-MM-DD, H:mma",
+  "gitlens.defaultDateShortFormat": "M/D/YY",
   "html.format.wrapLineLength": 80,
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
