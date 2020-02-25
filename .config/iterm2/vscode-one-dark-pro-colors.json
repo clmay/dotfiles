@@ -1,0 +1,23 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#282c34",
+		"terminal.foreground": "#c8c8c8",
+		"terminal.ansiBlack": "#2d3139",
+		"terminal.ansiBlue": "#61afef",
+		"terminal.ansiBrightBlack": "#7f848e",
+		"terminal.ansiBrightBlue": "#528bff",
+		"terminal.ansiBrightCyan": "#56b6c2",
+		"terminal.ansiBrightGreen": "#98c379",
+		"terminal.ansiBrightMagenta": "#7e0097",
+		"terminal.ansiBrightRed": "#f44747",
+		"terminal.ansiBrightWhite": "#d7dae0",
+		"terminal.ansiBrightYellow": "#e5c07b",
+		"terminal.ansiCyan": "#56b6c2",
+		"terminal.ansiGreen": "#98c379",
+		"terminal.ansiMagenta": "#c678dd",
+		"terminal.ansiRed": "#e06c75",
+		"terminal.ansiWhite": "#d7dae0",
+		"terminal.ansiYellow": "#e5c07b",
+}
