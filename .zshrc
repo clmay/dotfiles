@@ -5,12 +5,14 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Prompt
+# ======
 autoload -U promptinit; promptinit
 prompt pure
+zstyle :prompt:pure:git:stash show yes
 
-# Aliases
-# =======
-
+# Aliases/functions
+# =================
 dsrm () {
   find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
 }
