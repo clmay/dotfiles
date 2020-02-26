@@ -13,6 +13,8 @@ zstyle :prompt:pure:git:stash show yes
 
 # Aliases/functions
 # =================
+alias ..='cd ..'
+
 dsrm () {
   find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
 }
