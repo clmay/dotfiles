@@ -66,7 +66,6 @@ alias rc='bundle exec rubocop'
 alias pr='bundle exec parallel_rspec --serialize-stdout -n 8'
 alias ps='bundle exec parallel_split_test'
 
-
 alias dev='APP_ENV=DEV'
 alias prod='APP_ENV=PROD'
 alias qa='APP_ENV=QA'
