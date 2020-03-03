@@ -13,6 +13,7 @@ brew "postgresql", restart_service: true
 brew "sqlite"
 brew "python"
 brew "rbenv"
+brew "vault"
 brew "zsh-completions"
 cask "adobe-creative-cloud"
 cask "bitwarden"
