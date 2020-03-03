@@ -125,6 +125,10 @@ export RSPEC_RETRY_RETRY_COUNT=0
 # ====
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Vault
+# =====
+export VAULT_ADDR="https://vault.octanner.net"
+
 # VS Code
 # =======
 export VISUAL="/usr/local/bin/code"
