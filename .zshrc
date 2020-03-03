@@ -74,6 +74,11 @@ alias qa='APP_ENV=QA'
 
 alias nd='DOCKER=false'
 
+# Secrets
+if [ -f ~/.zshsecrets ]; then
+  source ~/.zshsecrets
+fi
+
 # Go
 # ==
 export GOPATH="$HOME/.go"
