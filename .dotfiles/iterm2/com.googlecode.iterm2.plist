@@ -432,7 +432,7 @@
 	<key>MaxVertically</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.config/iterm2</string>
+	<string>~/.dotfiles/iterm2</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -483,11 +483,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>859 710 841 470 -1792 -636 1792 1097 </string>
+	<string>880 726 799 448 -1792 -636 1792 1097 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>586 528 620 392 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1909 444 650 973 0 0 2560 1417 </string>
+	<string>1910 444 650 973 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1910 405 650 973 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -836,6 +836,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<false/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -1113,7 +1115,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>7</integer>
 			<key>Working Directory</key>
 			<string>/Users/clmay</string>
 		</dict>
@@ -1129,12 +1131,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1100, 1279}</string>
+		<string>{1098, 1281}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>7C7765C1-BF43-4408-8CFC-A0936BBFB639</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>188</integer>
+	<integer>205</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1902,7 +1904,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/chase.may/.config/iterm2</string>
+	<string>/Users/chase.may/.dotfiles/iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1918,7 +1920,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-25T16:47:27Z</date>
+	<date>2020-03-03T17:09:23Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
