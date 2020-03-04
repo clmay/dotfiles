@@ -65,8 +65,8 @@ alias 50x='repeat 50'
 
 alias rs='bundle exec rspec'
 alias rc='bundle exec rubocop'
-alias pr='bundle exec parallel_rspec --serialize-stdout -n 8'
-alias ps='bundle exec parallel_split_test'
+alias prs='bundle exec parallel_rspec --serialize-stdout -n 8'
+alias pst='bundle exec parallel_split_test'
 
 alias dev='APP_ENV=DEV'
 alias prod='APP_ENV=PROD'
