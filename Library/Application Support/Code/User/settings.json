@@ -21,9 +21,6 @@
     "zshrc": "shellscript",
   },
   "files.autoSave": "onFocusChange",
-  "files.exclude": {
-    "**/.git": false,
-  },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "gitlens.defaultDateFormat": "YYYY-MM-DD, H:mma",
@@ -42,9 +39,6 @@
     },
   },
   "ruby.useBundler": true,
-  "search.exclude": {
-    "**/.git": true,
-  },
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.external.osxExec": "iTerm.app",
