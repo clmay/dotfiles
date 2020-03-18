@@ -33,5 +33,13 @@
   {
     "key": "ctrl+cmd+w",
     "command": "-workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "cmd+h",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-editor.action.startFindReplaceAction"
   }
 ]
