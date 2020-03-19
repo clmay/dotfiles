@@ -9,8 +9,9 @@ brew "go"
 brew "haskell-stack"
 brew "leiningen"
 brew "nvm"
-brew "postgresql", restart_service: true
 brew "sqlite"
+brew "pipenv"
+brew "postgresql", restart_service: true
 brew "python"
 brew "rbenv"
 brew "vault"
