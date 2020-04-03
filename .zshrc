@@ -74,8 +74,8 @@ alias prod='APP_ENV=PROD'
 alias nd='DOCKER=false'
 
 # Secrets
-if [ -f ~/.zshsecrets ]; then
-  source ~/.zshsecrets
+if [ -f ~/.secrets ]; then
+  source ~/.secrets
 fi
 
 # Go
