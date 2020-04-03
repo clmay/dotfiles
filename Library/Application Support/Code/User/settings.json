@@ -30,6 +30,8 @@
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.extension.toc.levels": "3..6",
   "prettier.proseWrap": "always",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
@@ -53,6 +55,9 @@
   "workbench.startupEditor": "none",
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
   },
   "[ruby]": {
     "editor.tabSize": 2,
