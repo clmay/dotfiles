@@ -1,0 +1,15 @@
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+JamesBirtles.svelte-vscode
+kaiwood.endwise
+ms-azuretools.vscode-docker
+ms-python.python
+ms-vsliveshare.vsliveshare
+rebornix.ruby
+ritwickdey.LiveServer
+vscode-icons-team.vscode-icons
+wingrunr21.vscode-ruby
+xabikos.JavaScriptSnippets
+yzhang.markdown-all-in-one
+zhuangtongfa.material-theme
