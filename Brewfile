@@ -7,7 +7,7 @@ brew "elixir"
 brew "go"
 brew "maven"
 brew "nvm"
-brew "postgresql", restart_service: true
+brew "postgresql"
 brew "sqlite"
 brew "python"
 brew "rbenv"
