@@ -9,16 +9,12 @@
   "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [
-    80,
-    100,
-    120,
-  ],
+  "editor.rulers": [80, 100, 120],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "Brewfile": "shellscript",
-    "zshrc": "shellscript",
+    "zshrc": "shellscript"
   },
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
@@ -26,6 +22,7 @@
   "gitlens.defaultDateFormat": "YYYY-MM-DD, H:mma",
   "gitlens.defaultDateShortFormat": "M/D/YY",
   "html.format.wrapLineLength": 80,
+  "java.configuration.checkProjectSettingsExclusions": false,
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.extension.toc.levels": "3..6",
@@ -37,8 +34,8 @@
   "ruby.intellisense": "rubyLocate",
   "ruby.lint": {
     "rubocop": {
-      "useBundler": true,
-    },
+      "useBundler": true
+    }
   },
   "ruby.useBundler": true,
   "telemetry.enableTelemetry": false,
@@ -65,18 +62,18 @@
     "terminal.ansiMagenta": "#c678dd",
     "terminal.ansiRed": "#e06c75",
     "terminal.ansiWhite": "#d7dae0",
-    "terminal.ansiYellow": "#e5c07b",
+    "terminal.ansiYellow": "#e5c07b"
   },
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
   "[ruby]": {
-    "editor.tabSize": 2,
-  },
+    "editor.tabSize": 2
+  }
 }
