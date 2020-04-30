@@ -74,8 +74,11 @@ alias prod='APP_ENV=PROD'
 alias nd='DOCKER=false'
 
 # Secrets
+# =======
 if [ -f ~/.secrets ]; then
   source ~/.secrets
+else
+  touch ~/.secrets
 fi
 
 # Go
