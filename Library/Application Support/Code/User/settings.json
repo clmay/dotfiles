@@ -9,7 +9,11 @@
   "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -19,8 +23,6 @@
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "gitlens.defaultDateFormat": "YYYY-MM-DD, H:mma",
-  "gitlens.defaultDateShortFormat": "M/D/YY",
   "html.format.wrapLineLength": 80,
   "java.configuration.checkProjectSettingsExclusions": false,
   "markdown.extension.italic.indicator": "_",
