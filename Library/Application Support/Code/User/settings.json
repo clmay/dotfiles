@@ -14,6 +14,7 @@
     100,
     120,
   ],
+  "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -49,6 +50,7 @@
     "workbench.action.nextEditor",
     "workbench.action.previousEditor",
   ],
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.zoomLevel": 1,
   "workbench.colorTheme": "One Dark Pro",
   "workbench.colorCustomizations": {
