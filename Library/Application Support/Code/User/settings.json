@@ -1,9 +1,9 @@
 {
   "breadcrumbs.enabled": true,
-  "C_Cpp.autoAddFileAssociations": false,
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: WebKit, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, AccessModifierOffset: -2 }",
-  "C_Cpp.clang_format_style": "{ BasedOnStyle: WebKit, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, AccessModifierOffset: -2 }",
-  "C_Cpp.default.cppStandard": "c++11",
+  // "C_Cpp.autoAddFileAssociations": false,
+  // "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: WebKit, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, AccessModifierOffset: -2 }",
+  // "C_Cpp.clang_format_style": "{ BasedOnStyle: WebKit, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, AccessModifierOffset: -2 }",
+  // "C_Cpp.default.cppStandard": "c++11",
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -12,19 +12,21 @@
   "editor.rulers": [
     80,
     100,
-    120
+    120,
   ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "Brewfile": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
   },
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "html.format.wrapLineLength": 80,
   "java.configuration.checkProjectSettingsExclusions": false,
+  "java.requirements.JDK11Warning": false,
+  "java.semanticHighlighting.enabled": true,
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.extension.toc.levels": "3..6",
@@ -36,8 +38,8 @@
   "ruby.intellisense": "rubyLocate",
   "ruby.lint": {
     "rubocop": {
-      "useBundler": true
-    }
+      "useBundler": true,
+    },
   },
   "ruby.useBundler": true,
   "telemetry.enableTelemetry": false,
@@ -45,7 +47,7 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.commandsToSkipShell": [
     "workbench.action.nextEditor",
-    "workbench.action.previousEditor"
+    "workbench.action.previousEditor",
   ],
   "window.zoomLevel": 1,
   "workbench.colorTheme": "One Dark Pro",
@@ -70,12 +72,12 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[ruby]": {
-    "editor.tabSize": 2
-  }
+    "editor.tabSize": 2,
+  },
 }
