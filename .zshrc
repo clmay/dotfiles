@@ -10,6 +10,7 @@ compinit
 autoload -U promptinit; promptinit
 prompt pure
 zstyle :prompt:pure:git:stash show yes
+export WORDCHARS=''
 
 # Aliases/functions
 # =================
