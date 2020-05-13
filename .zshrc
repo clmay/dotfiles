@@ -14,8 +14,6 @@ export WORDCHARS=''
 
 # Aliases/functions
 # =================
-alias ..='cd ..'
-
 dsrm () {
   find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
 }
@@ -23,47 +21,8 @@ dsrm () {
 # g++
 alias g++='g++ -Wall -std=c++11'
 
-# git
-alias ga='git add'
-alias gb='git branch'
-alias gbd='git branch -D'
-alias gcb='git checkout -b'
-alias gcl='git clone'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcom='git checkout master'
-alias gd='git diff'
-alias gl='git log'
-alias gm='git merge'
-alias gmm='git merge master'
-alias gmv='git mv'
-alias gp='git push'
-alias gpl='git pull'
-alias gpu='git push -u origin HEAD'
-alias gr='git reset'
-alias grm='git rm'
-alias gs='git status'
-
-grs () {
-  git reset --soft HEAD~"$1"
-}
-
-grh () {
-  git reset --hard HEAD~"$1"
-}
-
-# ls
-alias la='ls -a'
-
-# repeat
-alias 5x='repeat 5'
-alias 10x='repeat 10'
-alias 50x='repeat 50'
-
-
 # O.C. Tanner aliases
 # ===================
-
 alias rs='bundle exec rspec'
 alias rc='bundle exec rubocop'
 alias prs='bundle exec parallel_rspec --serialize-stdout -n 8'
@@ -78,8 +37,6 @@ alias nd='DOCKER=false'
 # =======
 if [ -f ~/.secrets ]; then
   source ~/.secrets
-else
-  touch ~/.secrets
 fi
 
 # Go
