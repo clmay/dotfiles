@@ -371,7 +371,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>MaxVertically</key>
-	<false/>
+	<true/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/.dotfiles/iterm2</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
@@ -426,7 +426,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>496 486 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>9 0 730 1097 0 0 1792 1097 </string>
+	<string>906 0 730 1097 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1062 493 730 567 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
@@ -1236,7 +1236,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>50</integer>
+			<integer>24</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -1315,7 +1315,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>B77A863B-1A73-49C8-A299-D326AF8EE108</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>109</integer>
+	<integer>111</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2106,7 +2106,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-22T17:00:22Z</date>
+	<date>2020-05-26T16:17:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
