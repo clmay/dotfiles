@@ -14,9 +14,9 @@ export WORDCHARS=''
 
 # Aliases/functions
 # =================
-dsrm () {
-  find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
-}
+
+# cd
+alias ..='cd ..'
 
 # g++
 alias g++='g++ -Wall -std=c++11'
@@ -52,6 +52,12 @@ grh () {
 
 # ls
 alias la='ls -a'
+
+
+# misc
+dsrm () {
+  find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
+}
 
 # repeat
 alias 5x='repeat 5'
