@@ -15,7 +15,8 @@
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "Brewfile": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
+    "*.leex": "HTML (Eex)"
   },
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
