@@ -27,7 +27,6 @@
   "java.semanticHighlighting.enabled": true,
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
-  "markdown.extension.toc.levels": "3..6",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.singleQuote": true,
