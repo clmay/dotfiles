@@ -71,6 +71,7 @@ alias rc='bundle exec rubocop'
 
 alias dev='APP_ENV=DEV'
 alias prod='APP_ENV=PROD'
+alias qa='APP_ENV=QA'
 
 alias nd='DOCKER=false'
 
