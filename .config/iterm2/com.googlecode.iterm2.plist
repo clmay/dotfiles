@@ -474,7 +474,7 @@
 	<key>MaxVertically</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/iterm2</string>
+	<string>~/.config/iterm2</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -1419,7 +1419,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>B77A863B-1A73-49C8-A299-D326AF8EE108</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>152</integer>
+	<integer>156</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2198,7 +2198,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/chase.may/.dotfiles/iterm2</string>
+	<string>/Users/chase.may/.config/iterm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
