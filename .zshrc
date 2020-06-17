@@ -1,15 +1,12 @@
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit; compinit
 # End of lines added by compinstall
 
 # Prompt
 # ======
-autoload -U promptinit; promptinit
-prompt pure
-zstyle :prompt:pure:git:stash show yes
+eval "$(starship init zsh)"
 export WORDCHARS=''
 
 # Aliases/functions
