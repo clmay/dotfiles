@@ -33,7 +33,7 @@
     "workbench.action.nextEditor",
     "workbench.action.previousEditor"
   ],
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.editor.showTabs": true,
   "workbench.startupEditor": "none",
