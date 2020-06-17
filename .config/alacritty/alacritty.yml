@@ -1,3 +1,27 @@
+# Colors
+# from VS Code "Material Theme Darker High Contrast"
+# copied from command "Generate Color Theme From Current Settings"
 colors:
+  cursor:
+    text: '#1a1a1a'
+    cursor: '#ffcc00'
   primary:
     background: '#1a1a1a'
+  normal:
+    black: '#000000'
+    blue: '#82aaff'
+    cyan: '#89ddff'
+    green: '#c3e88d'
+    magenta: '#c792ea'
+    red: '#f07178'
+    white: '#ffffff'
+    yellow: '#ffcb6b'
+  bright:
+    black: '#4a4a4a'
+    blue: '#82aaff'
+    cyan: '#89ddff'
+    green: '#c3e88d'
+    magenta: '#c792ea'
+    red: '#f07178'
+    white: '#ffffff'
+    yellow: '#ffcb6b'
