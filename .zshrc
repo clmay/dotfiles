@@ -7,6 +7,7 @@ autoload -Uz compinit; compinit
 # Prompt
 # ======
 eval "$(starship init zsh)"
+export CLICOLOR=1
 export WORDCHARS=''
 
 # Aliases/functions
