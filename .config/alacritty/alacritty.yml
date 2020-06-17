@@ -25,3 +25,9 @@ colors:
     red: '#f07178'
     white: '#ffffff'
     yellow: '#ffcb6b'
+
+# Font configuration
+font:
+  normal:
+    family: Monaco
+  size: 14.0
