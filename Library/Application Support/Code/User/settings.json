@@ -34,7 +34,6 @@
     "workbench.action.previousEditor"
   ],
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.editor.showTabs": true,
   "workbench.startupEditor": "none",
   "[markdown]": {
