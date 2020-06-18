@@ -12,30 +12,6 @@ font:
     family: Monaco
 
 colors:
-  # from VS Code "Material Theme Darker High Contrast"
-  # copied from command "Generate Color Theme From Current Settings"
-  cursor:
-    text: '#000000'
-    cursor: '#ffcb6b'
   primary:
-    background: '#212121'
-  selection:
-    background: '#4a4a4a'
-  normal:
-    black: '#000000'
-    blue: '#82aaff'
-    cyan: '#89ddff'
-    green: '#c3e88d'
-    magenta: '#c792ea'
-    red: '#f07178'
-    white: '#ffffff'
-    yellow: '#ffcb6b'
-  bright:
-    black: '#4a4a4a'
-    blue: '#82aaff'
-    cyan: '#89ddff'
-    green: '#c3e88d'
-    magenta: '#c792ea'
-    red: '#f07178'
-    white: '#ffffff'
-    yellow: '#ffcb6b'
+    background: '#1e1e1e' # "panel.background", Dark+ (default dark) theme
+
