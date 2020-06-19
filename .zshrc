@@ -130,6 +130,10 @@ export RSPEC_RETRY_RETRY_COUNT=0
 # ====
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# TaaS
+# ====
+export TAAS_BETA=true
+
 # Vault
 # =====
 export VAULT_ADDR="https://vault.octanner.net"
