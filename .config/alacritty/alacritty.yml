@@ -14,3 +14,21 @@ font:
 colors:
   primary:
     background: '#1e1e1e' # "panel.background", Dark+ (default dark) theme
+  normal:
+    black: '#000000'
+    blue: '#569cd6'
+    cyan: '#70c0ba'
+    green: '#6a9955'
+    magenta: '#c397d8'
+    red: '#d54e53'
+    white: '#eaeaea'
+    yellow: '#e6c547'
+  bright:
+    black: '#000000'
+    blue: '#569cd6'
+    cyan: '#70c0ba'
+    green: '#6a9955'
+    magenta: '#c397d8'
+    red: '#d54e53'
+    white: '#eaeaea'
+    yellow: '#e6c547'
