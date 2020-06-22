@@ -17,9 +17,9 @@ autoload -Uz compinit; compinit
 
 # Prompt
 # ======
+eval "$(starship init zsh)"
 export CLICOLOR=1
 export WORDCHARS=''
-eval "$(starship init zsh)"
 
 # Aliases/functions
 # =================
@@ -32,6 +32,7 @@ alias g++='g++ -Wall -std=c++11'
 
 # git
 alias ga='git add'
+alias gaf='git add -f'
 alias gb='git branch'
 alias gbd='git branch -D'
 alias gcb='git checkout -b'
