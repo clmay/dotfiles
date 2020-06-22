@@ -13,7 +13,9 @@ font:
 
 colors:
   primary:
-    background: '#1e1e1e' # "panel.background", Dark+ (default dark) theme
+    background: '#1e1e1e'
+  selection:
+    background: '#565656'
   normal:
     black: '#000000'
     blue: '#569cd6'
