@@ -31,15 +31,11 @@
     "when": "!editorIsOpen && !multipleEditorGroups"
   },
   {
-    "key": "ctrl+cmd+w",
-    "command": "-workbench.action.toggleTabsVisibility"
+    "key": "cmd+0",
+    "command": "workbench.action.zoomReset"
   },
   {
-    "key": "cmd+h",
-    "command": "editor.action.startFindReplaceAction"
-  },
-  {
-    "key": "alt+cmd+f",
-    "command": "-editor.action.startFindReplaceAction"
+    "key": "cmd+e",
+    "command": "workbench.action.focusSideBar"
   }
 ]
