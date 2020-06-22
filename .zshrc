@@ -4,11 +4,22 @@ zstyle :compinstall filename '/Users/chase.may/.zshrc'
 autoload -Uz compinit; compinit
 # End of lines added by compinstall
 
+# Profiling
+# =========
+
+# Enable profiling with:
+# zmodload zsh/zprof
+# Then run:
+# zprof
+
+# Measure shell load time with:
+# 5x {time zsh -i -c exit}
+
 # Prompt
 # ======
-eval "$(starship init zsh)"
 export CLICOLOR=1
 export WORDCHARS=''
+eval "$(starship init zsh)"
 
 # Aliases/functions
 # =================
@@ -70,6 +81,7 @@ alias rc='bundle exec rubocop'
 alias dev='APP_ENV=DEV'
 alias prod='APP_ENV=PROD'
 alias qa='APP_ENV=QA'
+alias stg='APP_ENV=STAGE'
 
 alias nd='DOCKER=false'
 
@@ -79,23 +91,26 @@ if [ -f ~/.secrets ]; then
   source ~/.secrets
 fi
 
+# Miscellany
+# ==========
+
 # Go
-# ==
+# ---
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 
 # Homebrew
-# ========
+# --------
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 
 # Haskell
-# =======
+# -------
 export PATH="$HOME/.local/bin:$PATH" # for Stack
 
 # Node
-# ====
+# ----
 # from https://www.reddit.com/r/node/comments/4tg5jg/lazy_load_nvm_for_faster_shell_start/d5ib9fs/
 declare -a NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' | xargs -n1 basename | sort | uniq`)
 
@@ -112,43 +127,32 @@ for cmd in "${NODE_GLOBALS[@]}"; do
 done
 
 # Python
-# ======
+# ------
 export PATH="$HOME/Library/Python/3.7/bin:$PATH" # for pipenv
 export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
 
 # rbenv
-# =====
+# -----
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
 
 # RSpec
-# =====
+# -----
 export RSPEC_RETRY_RETRY_COUNT=0
 
 # Rust
-# ====
+# ----
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # TaaS
-# ====
+# ----
 export TAAS_BETA=true
 
 # Vault
-# =====
+# -----
 export VAULT_ADDR="https://vault.octanner.net"
 
 # VS Code
-# =======
+# -------
 export VISUAL="/usr/local/bin/code"
-
-# Profiling
-# =========
-
-# Enable profiling with:
-# zmodload zsh/zprof
-# Then run:
-# zprof
-
-# Measure shell load time with:
-# 5x {time zsh -i -c exit}
