@@ -1,11 +1,11 @@
 window:
   padding:
     x: 10
-    y: 10
+    y: 0
   position:
     x: 1985
     y: 0
-  decorations: transparent
+  decorations: buttonless
 
 font:
   normal:
