@@ -11,6 +11,10 @@ font:
   normal:
     family: Monaco
 
+mouse:
+  url:
+    modifiers: Command
+
 colors:
   primary:
     background: '#1e1e1e'
