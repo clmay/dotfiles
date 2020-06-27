@@ -34,25 +34,9 @@
     "workbench.action.previousEditor"
   ],
   "window.zoomLevel": 0,
-  "workbench.colorCustomizations": {
-    "terminal.ansiBlack": "#000000",
-    "terminal.ansiBlue": "#569cd6",
-    "terminal.ansiCyan": "#70c0ba",
-    "terminal.ansiGreen": "#6a9955",
-    "terminal.ansiMagenta": "#c586c0",
-    "terminal.ansiRed": "#d54e53",
-    "terminal.ansiWhite": "#eaeaea",
-    "terminal.ansiYellow": "#e6c547",
-    "terminal.ansiBrightBlack": "#000000",
-    "terminal.ansiBrightBlue": "#569cd6",
-    "terminal.ansiBrightCyan": "#70c0ba",
-    "terminal.ansiBrightGreen": "#6a9955",
-    "terminal.ansiBrightMagenta": "#c586c0",
-    "terminal.ansiBrightRed": "#d54e53",
-    "terminal.ansiBrightWhite": "#eaeaea",
-    "terminal.ansiBrightYellow": "#e6c547"
-  },
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.startupEditor": "none",
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
