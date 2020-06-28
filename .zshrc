@@ -80,6 +80,7 @@ alias rs='bundle exec rspec'
 alias rc='bundle exec rubocop'
 
 alias dev='APP_ENV=DEV'
+alias prd='APP_ENV=PROD'
 alias prod='APP_ENV=PROD'
 alias qa='APP_ENV=QA'
 alias stg='APP_ENV=STAGE'
