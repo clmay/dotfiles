@@ -1,7 +1,6 @@
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
-
-autoload -Uz compinit; compinit
+autoload -Uz compinit && compinit
 # End of lines added by compinstall
 
 # Profiling
@@ -17,6 +16,8 @@ autoload -Uz compinit; compinit
 
 # Prompt
 # ======
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 eval "$(starship init zsh)"
 export CLICOLOR=1
 export WORDCHARS=''
