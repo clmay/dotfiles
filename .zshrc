@@ -16,8 +16,13 @@ autoload -Uz compinit && compinit
 
 # Prompt
 # ======
+
+# enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
+
+# case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 eval "$(starship init zsh)"
 export CLICOLOR=1
 export WORDCHARS=''
