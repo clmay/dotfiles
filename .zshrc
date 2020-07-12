@@ -111,6 +111,7 @@ export PATH="$GOBIN:$PATH"
 # --------
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export HOMEBREW_BUNDLE_NO_LOCK=true
+export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
 
 # Haskell
 # -------
