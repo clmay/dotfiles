@@ -1,12 +1,6 @@
 window:
-  dimensions:
-    columns: 150
-    lines: 75
   padding:
     x: 10
-    y: 0
-  position:
-    x: 1594
     y: 0
   decorations: buttonless
 
