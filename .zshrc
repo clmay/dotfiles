@@ -115,7 +115,7 @@ export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
 
 # Haskell
 # -------
-export PATH="$HOME/.local/bin:$PATH" # for Stack
+# export PATH="$HOME/.local/bin:$PATH" # for Stack
 
 # Node
 # ----
@@ -136,8 +136,8 @@ done
 
 # Python
 # ------
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"      # for pipenv
-export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
+# export PATH="$HOME/Library/Python/3.7/bin:$PATH"      # for pipenv
+# export PATH="/usr/local/opt/python/libexec/bin:$PATH" # for homebrew Python
 
 # rbenv
 # -----
