@@ -43,6 +43,7 @@ key_bindings:
   - { mods: Command, key: Back, chars: "\x15" } # delete line
   - { mods: Command, key: Left, chars: "\x01" } # move cursor to start of line
   - { mods: Command, key: Right, chars: "\x05" } # move cursor to end of line
+  - { mods: Command, key: N, action: SpawnNewInstance }
   - { mods: Command, key: Z, chars: "\x1f" } # undo
   - { mods: Option, key: Left, chars: "\x1b\x62" } # move cursor one word left
   - { mods: Option, key: Right, chars: "\x1b\x66" } # move cursor one word right
