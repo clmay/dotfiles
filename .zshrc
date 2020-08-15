@@ -53,18 +53,18 @@ alias gmm='git merge master'
 alias gmv='git mv'
 alias gp='git push'
 alias gpl='git pull'
-alias gps='git push --set-upstream origin HEAD'
+alias gps='git push -u origin HEAD'
 alias gpu='git push -u origin HEAD'
 alias gr='git reset'
 alias grm='git rm'
 alias gs='git status'
 
 grs() {
-  git reset --soft HEAD~"$1"
+  git reset --soft HEAD~
 }
 
 grh() {
-  git reset --hard HEAD~"$1"
+  git reset --hard HEAD~
 }
 
 # ls
