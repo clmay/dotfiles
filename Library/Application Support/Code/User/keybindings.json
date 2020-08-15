@@ -58,10 +58,14 @@
   },
   {
     "key": "ctrl+cmd+c",
-    "command": "copyFilePath",
+    "command": "copyFilePath"
   },
   {
     "key": "ctrl+cmd+r",
-    "command": "copyRelativeFilePath",
+    "command": "copyRelativeFilePath"
   },
+  {
+    "key": "alt+cmd+n",
+    "command": "workbench.action.files.newUntitledFile"
+  }
 ]
