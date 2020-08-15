@@ -113,7 +113,11 @@ export PATH="$GOBIN:$PATH"
 # --------
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export HOMEBREW_BUNDLE_NO_LOCK=true
-export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
+
+case $(hostname -s) in
+clmay-mac) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.personal" ;;
+i35368-IS0) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.work" ;;
+esac
 
 # Haskell
 # -------
