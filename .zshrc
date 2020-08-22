@@ -1,8 +1,3 @@
-# The following lines were added by compinstall
-zstyle :compinstall filename '/Users/chase.may/.zshrc'
-autoload -Uz compinit && compinit
-# End of lines added by compinstall
-
 # Profiling
 # =========
 
@@ -14,18 +9,26 @@ autoload -Uz compinit && compinit
 # Measure shell load time with:
 # 5x {time zsh -i -c exit}
 
-# Prompt
-# ======
+# Shell config
+# ============
+# compinstall
+zstyle :compinstall filename '/Users/chase.may/.zshrc'
+autoload -Uz compinit && compinit
+# end compinstall
+
+# `<dirname>`` == `cd <dirname>`
+setopt auto_cd
 
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
-
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-eval "$(starship init zsh)"
 export CLICOLOR=1
 export WORDCHARS=''
+
+# use Starship prompt
+eval "$(starship init zsh)"
 
 # Aliases/functions
 # =================
