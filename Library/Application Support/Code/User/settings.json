@@ -22,6 +22,7 @@
   "html.format.wrapLineLength": 80,
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "markdown.extension.toc.levels": "2..3",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.singleQuote": true,
