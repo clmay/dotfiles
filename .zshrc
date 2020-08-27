@@ -33,9 +33,6 @@ eval "$(starship init zsh)"
 # Aliases/functions
 # =================
 
-# cd
-alias ..='cd ..'
-
 # g++
 alias g++='g++ -Wall -std=c++11'
 
