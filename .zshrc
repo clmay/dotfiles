@@ -117,6 +117,7 @@ export HOMEBREW_BUNDLE_NO_LOCK=true
 case $(hostname -s) in
 clmay-mac) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.personal" ;;
 i35368-IS0) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.work" ;;
+i33746-IS8) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.work" ;;
 esac
 
 # Haskell
