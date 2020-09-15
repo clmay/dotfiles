@@ -41,12 +41,6 @@ dsrm() {
   find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
 }
 
-# Secrets
-# =======
-if [ -f ~/.secrets ]; then
-  source ~/.secrets
-fi
-
 # Miscellany
 # ==========
 
@@ -95,21 +89,9 @@ done
 # -----
 eval "$(rbenv init -)"
 
-# RSpec
-# -----
-export RSPEC_RETRY_RETRY_COUNT=0
-
 # Rust
 # ----
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# TaaS
-# ----
-export TAAS_BETA=true
-
-# Vault
-# -----
-export VAULT_ADDR="https://vault.octanner.net"
 
 # VS Code
 # -------
