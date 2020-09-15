@@ -33,40 +33,6 @@ eval "$(starship init zsh)"
 # Aliases/functions
 # =================
 
-# g++
-alias g++='g++ -Wall -std=c++11'
-
-# git
-alias ga='git add'
-alias gaf='git add -f'
-alias gb='git branch'
-alias gbd='git branch -D'
-alias gcb='git checkout -b'
-alias gcl='git clone'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcom='git checkout master'
-alias gd='git diff'
-alias gl='git log'
-alias gm='git merge'
-alias gmm='git merge master'
-alias gmv='git mv'
-alias gp='git push'
-alias gpl='git pull'
-alias gps='git push -u origin HEAD'
-alias gpu='git push -u origin HEAD'
-alias gr='git reset'
-alias grm='git rm'
-alias gs='git status'
-
-grs() {
-  git reset --soft HEAD~
-}
-
-grh() {
-  git reset --hard HEAD~
-}
-
 # ls
 alias la='ls -a'
 
@@ -74,25 +40,6 @@ alias la='ls -a'
 dsrm() {
   find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
 }
-
-# repeat
-alias 5x='repeat 5'
-alias 10x='repeat 10'
-alias 50x='repeat 50'
-
-# O.C. Tanner aliases
-# ===================
-alias rs='bundle exec rspec'
-alias rc='bundle exec rubocop'
-
-alias dev='APP_ENV=DEV'
-alias prd='APP_ENV=PROD'
-alias prod='APP_ENV=PROD'
-alias qa='APP_ENV=QA'
-alias stg='APP_ENV=STAGE'
-alias stage='APP_ENV=STAGE'
-
-alias nd='DOCKER=false'
 
 # Secrets
 # =======
@@ -116,8 +63,6 @@ export HOMEBREW_BUNDLE_NO_LOCK=true
 
 case $(hostname -s) in
 clmay-mac) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.personal" ;;
-i35368-IS0) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.work" ;;
-i33746-IS8) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.work" ;;
 esac
 
 # Haskell
