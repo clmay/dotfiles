@@ -11,8 +11,11 @@ kaiwood.endwise
 mikestead.dotenv
 ms-azuretools.vscode-docker
 ms-vsliveshare.vsliveshare
+Prisma.prisma
 ritwickdey.LiveServer
+svelte.svelte-vscode
 Tyriar.vscode-terminal-here
 ue.alphabetical-sorter
 wingrunr21.vscode-ruby
+xabikos.JavaScriptSnippets
 yzhang.markdown-all-in-one
