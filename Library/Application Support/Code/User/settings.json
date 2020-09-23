@@ -37,7 +37,7 @@
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.editor.showTabs": true,
-  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
   "workbench.startupEditor": "none",
   "workbench.tree.renderIndentGuides": "always",
   "[markdown]": {
