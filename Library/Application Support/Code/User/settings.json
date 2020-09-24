@@ -7,7 +7,11 @@
   "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
@@ -21,13 +25,10 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "html.format.wrapLineLength": 80,
+  "javascript.format.semicolons": "insert",
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.extension.toc.levels": "2..3",
-  "prettier.proseWrap": "always",
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "solargraph.formatting": true,
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.external.osxExec": "Alacritty.app",
@@ -41,13 +42,10 @@
   "workbench.iconTheme": "eq-material-theme-icons-darker",
   "workbench.startupEditor": "none",
   "workbench.tree.renderIndentGuides": "always",
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }
