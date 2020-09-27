@@ -33,6 +33,24 @@ eval "$(starship init zsh)"
 # Aliases/functions
 # =================
 
+# git
+alias ga='git add'
+alias gd='git diff'
+alias gl='git log'
+alias gp='git push'
+alias gr='git reset'
+alias gs='git status'
+alias gcm='git commit -m'
+alias gpl='git pull'
+
+grh() {
+  git reset --hard HEAD~$1
+}
+
+grs() {
+  git reset --soft HEAD~$1
+}
+
 # ls
 alias la='ls -a'
 
