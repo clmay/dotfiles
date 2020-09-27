@@ -7,11 +7,7 @@
   "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [
-    80,
-    100,
-    120
-  ],
+  "editor.rulers": [80, 100, 120],
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
@@ -29,6 +25,7 @@
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.extension.toc.levels": "2..3",
+  "prettier.proseWrap": "always",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.external.osxExec": "Alacritty.app",
@@ -47,5 +44,8 @@
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
