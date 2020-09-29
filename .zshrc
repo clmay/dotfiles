@@ -41,6 +41,7 @@ alias gp='git push'
 alias gr='git reset'
 alias gs='git status'
 alias gcm='git commit -m'
+alias gco='git checkout .'
 alias gpl='git pull'
 
 grh() {
