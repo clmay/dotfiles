@@ -35,6 +35,7 @@ eval "$(starship init zsh)"
 
 # git
 alias ga='git add'
+alias gb='git branch'
 alias gd='git diff'
 alias gl='git log'
 alias gp='git push'
