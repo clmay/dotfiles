@@ -14,36 +14,37 @@ mouse:
 
 colors:
   primary:
-    background: '#1e1e1e'
+    background: "#1e1e1e"
   selection:
-    background: '#565656'
+    background: "#565656"
   cursor:
-    text: '#000000'
-    cursor: '#ffcb6b'
+    text: "#000000"
+    cursor: "#ffcb6b"
   normal:
-    black: '#000000'
-    blue: '#82aaff'
-    cyan: '#89ddff'
-    green: '#c3e88d'
-    magenta: '#c792ea'
-    red: '#ff5370'
-    white: '#ffffff'
-    yellow: '#ffcb6b'
+    black: "#000000"
+    blue: "#82aaff"
+    cyan: "#89ddff"
+    green: "#c3e88d"
+    magenta: "#c792ea"
+    red: "#ff5370"
+    white: "#ffffff"
+    yellow: "#ffcb6b"
   bright:
-    black: '#4a4a4a'
-    blue: '#82aaff'
-    cyan: '#89ddff'
-    green: '#c3e88d'
-    magenta: '#c792ea'
-    red: '#ff5370'
-    white: '#ffffff'
-    yellow: '#ffcb6b'
+    black: "#4a4a4a"
+    blue: "#82aaff"
+    cyan: "#89ddff"
+    green: "#c3e88d"
+    magenta: "#c792ea"
+    red: "#ff5370"
+    white: "#ffffff"
+    yellow: "#ffcb6b"
 
 key_bindings:
   - { mods: Command, key: Back, chars: "\x15" } # delete line
   - { mods: Command, key: Left, chars: "\x01" } # move cursor to start of line
   - { mods: Command, key: Right, chars: "\x05" } # move cursor to end of line
   - { mods: Command, key: N, action: SpawnNewInstance }
+  - { mods: Command, key: T, action: SpawnNewInstance }
   - { mods: Command, key: Z, chars: "\x1f" } # undo
   - { mods: Option, key: Left, chars: "\x1b\x62" } # move cursor one word left
   - { mods: Option, key: Right, chars: "\x1b\x66" } # move cursor one word right
