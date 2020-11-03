@@ -13,6 +13,12 @@
 # ============
 # compinstall
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
+
+# Homebrew completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
 autoload -Uz compinit && compinit
 # end compinstall
 
@@ -74,20 +80,20 @@ export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 
+# Haskell
+# -------
+# export PATH="$HOME/.local/bin:$PATH" # for Stack
+
 # Homebrew
 # --------
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 
 # case $(hostname -s) in
-# clmay-mac) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.personal" ;;
+  *) export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
+  ;;
 # esac
 
-export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile.personal"
-
-# Haskell
-# -------
-# export PATH="$HOME/.local/bin:$PATH" # for Stack
 
 # Node
 # ----
@@ -122,3 +128,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # VS Code
 # -------
 export VISUAL="/usr/local/bin/code"
+
+# asdf
+# ----
+
+. $(brew --prefix asdf)/asdf.sh
