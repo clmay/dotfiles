@@ -1,17 +1,10 @@
-# Profiling
-# =========
-
-# Enable profiling with:
-# zmodload zsh/zprof
-# Then run:
-# zprof
-
 # Measure shell load time with:
-# 5x {time zsh -i -c exit}
+# repeat 5 { time zsh -i -c exit }
 
 # Shell config
 # ============
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
+autoload -Uz compinit && compinit
 setopt auto_cd
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
@@ -72,32 +65,10 @@ export PATH="$GOBIN:$PATH"
 # Homebrew
 # --------
 
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
-
-case $(hostname -s) in
-*)
-  export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
-  ;;
-esac
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # VS Code
 # -------
 export VISUAL="/usr/local/bin/code"
-
-# asdf
-# ----
-# (must go at the end, in this order)
-
-. $(brew --prefix asdf)/asdf.sh
-
-if type asdf &>/dev/null; then
-  FPATH=(${ASDF_DIR}/completions $FPATH)
-fi
-
-autoload -Uz compinit
-compinit
