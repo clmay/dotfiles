@@ -72,3 +72,7 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 # VS Code
 # -------
 export VISUAL="/usr/local/bin/code"
+
+# asdf (must go at end)
+# ---------------------
+. /usr/local/opt/asdf/asdf.sh
