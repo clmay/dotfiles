@@ -3,7 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-brew "asdf"
+brew 'asdf', args: ['HEAD']
 brew "exercism"
 brew "gnupg"
 brew "postgresql", restart_service: true
