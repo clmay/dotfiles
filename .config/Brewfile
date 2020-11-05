@@ -5,7 +5,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 brew "asdf"
 brew "exercism"
-brew "gpg"
+brew "gnupg"
 brew "postgresql", restart_service: true
 brew "starship"
 brew "zsh-completions"
