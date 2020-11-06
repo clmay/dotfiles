@@ -53,7 +53,7 @@
     "command": "-editor.action.startFindReplaceAction"
   },
   {
-    "key": "cmd+n",
+    "key": "cmd+alt+n",
     "command": "explorer.newFile"
   },
   {
@@ -64,8 +64,4 @@
     "key": "ctrl+cmd+r",
     "command": "copyRelativeFilePath"
   },
-  {
-    "key": "alt+cmd+n",
-    "command": "workbench.action.files.newUntitledFile"
-  }
 ]
