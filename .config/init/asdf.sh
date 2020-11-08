@@ -15,3 +15,5 @@ bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-ke
 
 asdf install
 asdf reshim
+
+asdf plugin list >~/.config/init/asdf-plugins.txt
