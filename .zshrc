@@ -38,11 +38,11 @@ alias gpl='git pull'
 alias gps='git push --set-upstream origin HEAD'
 
 grh() {
-  git reset --hard HEAD~$1
+  git reset --hard HEAD~"$@"
 }
 
 grs() {
-  git reset --soft HEAD~$1
+  git reset --soft HEAD~"$@"
 }
 
 # ls
