@@ -10,3 +10,6 @@ brew bundle cleanup -f
 # Upgrade all
 brew upgrade
 brew cask upgrade
+
+# Update Brewfile
+brew bundle dump -f
