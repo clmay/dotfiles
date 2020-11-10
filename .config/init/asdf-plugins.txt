@@ -1,6 +1,0 @@
-deno
-direnv
-golang
-nodejs
-python
-ruby
