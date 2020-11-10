@@ -3,10 +3,11 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-brew 'asdf', args: ['HEAD']
+brew "coreutils"
+brew "asdf", args: ["HEAD"]
 brew "exercism"
 brew "gnupg"
-brew "postgresql", restart_service: true
+brew "postgresql"
 brew "starship"
 brew "zsh-completions"
 cask "alacritty"
