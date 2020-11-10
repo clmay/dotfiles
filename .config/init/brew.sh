@@ -9,7 +9,7 @@ brew bundle cleanup -f
 
 # Upgrade all
 brew upgrade
-brew cask upgrade
+brew upgrade --cask
 
 # Update Brewfile
 brew bundle dump -f
