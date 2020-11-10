@@ -1,0 +1,14 @@
+bungcip.better-toml
+CoenraadS.bracket-pair-colorizer-2
+Equinusocio.vsc-community-material-theme
+Equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
+foxundermoon.shell-format
+jianbingfang.dupchecker
+mikestead.dotenv
+ms-azuretools.vscode-docker
+Prisma.prisma
+ritwickdey.LiveServer
+svelte.svelte-vscode
+ue.alphabetical-sorter
+yzhang.markdown-all-in-one
