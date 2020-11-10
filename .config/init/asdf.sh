@@ -10,9 +10,6 @@ done <~/.config/init/asdf-plugins.txt
 
 asdf plugin update --all
 
-# Add Node.js release keys
-bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
-
 asdf install
 asdf reshim
 
