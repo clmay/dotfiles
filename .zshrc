@@ -1,8 +1,15 @@
 # Measure shell load time with:
 # repeat 5 { time zsh -i -c exit }
 
-# Shell config
-# ============
+# Shell setup
+# ===========
+
+export CLICOLOR=1
+export WORDCHARS=''
+
+# zsh
+# ---
+
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
 autoload -Uz compinit && compinit
 setopt auto_cd
@@ -11,17 +18,17 @@ zstyle ':completion:*:*:*:*:*' menu select
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-export CLICOLOR=1
-export WORDCHARS=''
-
 # Starship
 # --------
+
 eval "$(starship init zsh)"
 
 # Aliases/functions
 # =================
 
 # git
+# ---
+
 alias ga='git add'
 alias gb='git branch'
 alias gd='git diff'
@@ -46,18 +53,23 @@ grs() {
 }
 
 # ls
+# --
+
 alias la='ls -a'
 
-# misc
+# et cetera
+# ---------
+
 dsrm() {
   find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
 }
 
-# Miscellany
-# ==========
+# Et cetera
+# =========
 
 # Go
 # ---
+
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
@@ -71,11 +83,10 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # VS Code
 # -------
+
 export VISUAL="/usr/local/bin/code"
 
 # asdf (must go at end)
 # ---------------------
-# Hook direnv into your shell.
-eval "$(asdf exec direnv hook zsh)"
-# A shortcut for asdf managed direnv.
-direnv() { asdf exec direnv "$@"; }
+
+. /usr/local/opt/asdf/asdf.sh
