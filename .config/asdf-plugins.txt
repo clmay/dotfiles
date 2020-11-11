@@ -8,6 +8,7 @@ helm
 java
 kubectl
 nodejs
+poetry
 python
 ruby
 terraform
