@@ -34,6 +34,7 @@
     "workbench.action.nextEditor",
     "workbench.action.previousEditor"
   ],
+  "todo-tree.tree.showScanModeButton": false,
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.editor.showTabs": true,
