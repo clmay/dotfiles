@@ -2,8 +2,10 @@ deno
 direnv
 dotnet-core
 elixir
+erlang
 golang
 helm
+java
 kubectl
 nodejs
 python
