@@ -89,6 +89,8 @@ export VISUAL="/usr/local/bin/code"
 # asdf (must go at end)
 # ---------------------
 
+. /usr/local/opt/asdf/asdf.sh
+
 # Hook direnv into your shell.
 eval "$(asdf exec direnv hook zsh)"
 
