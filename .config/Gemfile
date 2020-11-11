@@ -1,3 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'foreman'
 gem 'rails', '6.0.0'
+gem 'ruby-debug-ide'
+gem 'pry'
+gem 'rubocop'

@@ -12,3 +12,7 @@ echo
 echo "Running VS Code script"
 echo
 . ~/.scripts/vscode.sh
+
+echo "Running Rubygems script"
+echo
+. ~/.scripts/gems.sh
