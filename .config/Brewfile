@@ -5,6 +5,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 brew "coreutils"
 brew "asdf", args: ["HEAD"]
+brew "cookiecutter"
 brew "exercism"
 brew "gnupg"
 brew "postgresql"
