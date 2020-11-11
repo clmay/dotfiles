@@ -8,4 +8,4 @@ while read line; do
     code --install-extension $line --force
 done <~/.config/vscode-exts.txt
 
-code --list-extensions >~/.config/init/vscode-exts.txt
+code --list-extensions >~/.config/vscode-exts.txt
