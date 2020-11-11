@@ -90,9 +90,5 @@ export VISUAL="/usr/local/bin/code"
 # ---------------------
 
 . /usr/local/opt/asdf/asdf.sh
-
-# Hook direnv into your shell.
 eval "$(asdf exec direnv hook zsh)"
-
-# A shortcut for asdf managed direnv.
 direnv() { asdf exec direnv "$@"; }
