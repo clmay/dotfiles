@@ -61,11 +61,13 @@ dsrm() {
 # Et cetera
 # =========
 
+# Confluent
+# ---------
+export PATH="$HOME/.bin/confluent-6.0.0/bin:$PATH"
+
 # Go
 # ---
 export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
-export PATH="$GOBIN:$PATH"
 
 # Homebrew
 # --------
@@ -76,6 +78,10 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 # VS Code
 # -------
 export VISUAL="/usr/local/bin/code"
+
+# Secrets
+# -------
+. ~/.secrets
 
 # asdf (must go at end)
 # ---------------------
