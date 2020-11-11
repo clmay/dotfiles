@@ -63,7 +63,8 @@ dsrm() {
 
 # Confluent
 # ---------
-export PATH="$HOME/.bin/confluent-6.0.0/bin:$PATH"
+export CONFLUENT_HOME=$HOME/.bin/confluent-6.0.0
+export PATH="$PATH:$CONFLUENT_HOME/bin"
 
 # Go
 # ---
