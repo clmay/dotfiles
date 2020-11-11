@@ -5,7 +5,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 brew "coreutils"
 brew "asdf", args: ["HEAD"]
-brew "erlang"
 brew "exercism"
 brew "gnupg"
 brew "postgresql"
