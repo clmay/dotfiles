@@ -1,7 +1,12 @@
 deno
 direnv
+dotnet-core
+elixir
 golang
+helm
+kubectl
 nodejs
 python
 ruby
+terraform
 yarn
