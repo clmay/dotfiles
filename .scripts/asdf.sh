@@ -9,3 +9,5 @@ asdf plugin update --all
 
 asdf install
 asdf reshim
+
+asdf plugin list >~/.config/asdf-plugins.txt
