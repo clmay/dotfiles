@@ -1,0 +1,51 @@
+window:
+  padding:
+    x: 10
+    y: 0
+  decorations: buttonless
+
+font:
+  normal:
+    family: Monaco
+  size: 12
+
+mouse:
+  url:
+    modifiers: Command
+
+colors:
+  primary:
+    background: '#1e1e1e'
+  selection:
+    background: '#3a3d41'
+  cursor:
+    text: '#000000'
+    cursor: '#ffcb6b'
+  bright:
+    black: '#666666'
+    blue: '#569cd6'
+    cyan: '#4ec9b0'
+    green: '#6a9955'
+    magenta: '#d670d6'
+    red: '#f44747'
+    white: '#c8c8c8'
+    yellow: '#ffd700'
+  normal:
+    black: '#666666'
+    blue: '#569cd6'
+    cyan: '#4ec9b0'
+    green: '#6a9955'
+    magenta: '#d670d6'
+    red: '#f44747'
+    white: '#c8c8c8'
+    yellow: '#ffd700'
+
+key_bindings:
+  - { mods: Command, key: Back, chars: "\x15" } # delete line
+  - { mods: Command, key: Left, chars: "\x01" } # move cursor to start of line
+  - { mods: Command, key: Right, chars: "\x05" } # move cursor to end of line
+  - { mods: Command, key: N, action: SpawnNewInstance }
+  - { mods: Command, key: T, action: SpawnNewInstance }
+  - { mods: Command, key: Z, chars: "\x1f" } # undo
+  - { mods: Option, key: Left, chars: "\x1b\x62" } # move cursor one word left
+  - { mods: Option, key: Right, chars: "\x1b\x66" } # move cursor one word right

@@ -1,0 +1,11 @@
+cmake
+direnv
+golang
+helm
+k6
+kubectl
+nodejs
+ruby
+rust
+yarn
+zig

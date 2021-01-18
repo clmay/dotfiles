@@ -1,0 +1,78 @@
+{
+  "debug.javascript.usePreview": true,
+  "editor.fontFamily": "Monaco, monospace",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "zshrc": "shellscript",
+  },
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "html.format.wrapLineLength": 80,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.packageManager": "yarn",
+  "prettier.proseWrap": "always",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "tabnine.experimentalAutoImports": true,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "terminal.external.osxExec": "Alacritty.app",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0,
+  "workbench.colorCustomizations" : {
+    "statusBar.background": "#333333",
+    "statusBar.foreground": "#999999",
+    "terminal.ansiBlack": "#666666",
+    "terminal.ansiBlue": "#569cd6",
+    "terminal.ansiCyan": "#4ec9b0",
+    "terminal.ansiGreen": "#6a9955",
+    "terminal.ansiMagenta": "#d670d6",
+    "terminal.ansiRed": "#f44747",
+    "terminal.ansiWhite": "#c8c8c8",
+    "terminal.ansiYellow": "#ffd700",
+    "terminal.ansiBrightBlack": "#666666",
+    "terminal.ansiBrightBlue": "#569cd6",
+    "terminal.ansiBrightCyan": "#4ec9b0",
+    "terminal.ansiBrightGreen": "#6a9955",
+    "terminal.ansiBrightMagenta": "#d670d6",
+    "terminal.ansiBrightRed": "#f44747",
+    "terminal.ansiBrightWhite": "#c8c8c8",
+    "terminal.ansiBrightYellow": "#ffd700",
+    "terminal.selectionBackground": "#999999"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todo-tree.filtering.includeHiddenFiles": true,
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
+  "todo-tree.general.enableFileWatcher": true,
+}
