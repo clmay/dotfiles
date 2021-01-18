@@ -19,6 +19,10 @@
     "command": "workbench.action.zoomReset"
   },
   {
+    "key": "cmd+ctrl+p",
+    "command": "copyRelativeFilePath"
+  },
+  {
     "key": "cmd+n",
     "command": "explorer.newFile"
   },
