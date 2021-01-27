@@ -11,5 +11,5 @@ excludesfile = ~/.config/git/global.gitignore
 [alias]
 conflicts = diff --check
 
-[includeIf "gitdir/i:~/Projects"]
+[includeIf "gitdir/i:~/Projects/"]
 path = ~/.config/git/mastery/.gitconfig
