@@ -16,6 +16,7 @@
     "zshrc": "shellscript",
   },
   "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "html.format.wrapLineLength": 80,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -28,6 +29,10 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.external.osxExec": "Alacritty.app",
+  "todo-tree.filtering.includeHiddenFiles": true,
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
+  "todo-tree.general.enableFileWatcher": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 0,
   "workbench.colorCustomizations" : {
@@ -71,8 +76,4 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "todo-tree.filtering.includeHiddenFiles": true,
-  "todo-tree.filtering.ignoreGitSubmodules": true,
-  "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
-  "todo-tree.general.enableFileWatcher": true,
 }
