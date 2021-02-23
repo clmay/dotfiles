@@ -4,7 +4,7 @@
 # Shell setup
 # ===========
 export CLICOLOR=1
-export WORDCHARS=''
+export WORDCHARS='&'
 
 # zsh
 # ---
