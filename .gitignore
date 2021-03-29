@@ -15,8 +15,6 @@
 .config/configstore/
 .config/telepresence/
 
-!.scripts/
-
 !.ssh/
 .ssh/*
 !.ssh/config
