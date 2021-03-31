@@ -4,3 +4,4 @@ k6 0.29.0
 kubectl 1.20.2
 nodejs 15.7.0
 yarn 1.22.10
+ruby 3.0.0
