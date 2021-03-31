@@ -76,15 +76,7 @@ export GOPATH="$HOME/.go"
 
 # Homebrew
 # --------
-case "$(hostname)" in
-MacBook-Pro-Chase-May)
-  export HOMEBREW_BUNDLE_FILE="~/.config/brew/mastery/Brewfile"
-  ;;
-*)
-  export HOMEBREW_BUNDLE_FILE="~/.config/brew/personal/Brewfile"
-  ;;
-esac
-
+export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
