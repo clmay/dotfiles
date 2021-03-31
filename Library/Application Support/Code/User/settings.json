@@ -1,57 +1,86 @@
 {
-  "breadcrumbs.enabled": true,
-  // "C_Cpp.clang_format_style": "{ BasedOnStyle: WebKit, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, AccessModifierOffset: -2 }",
-  // "C_Cpp.default.cppStandard": "c++11",
+  "debug.javascript.usePreview": true,
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.minimap.enabled": true,
+  "editor.quickSuggestionsDelay": 0,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80, 100, 120],
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
+  "editor.rulers": [80, 120],
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "Brewfile": "shellscript",
     "zshrc": "shellscript",
-    "*.leex": "HTML (Eex)"
   },
   "files.autoSave": "onFocusChange",
-  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": false
+  },
   "files.trimTrailingWhitespace": true,
   "html.format.wrapLineLength": 80,
-  "javascript.format.semicolons": "insert",
-  "markdown.extension.italic.indicator": "_",
-  "markdown.extension.tableFormatter.normalizeIndentation": true,
-  "markdown.extension.toc.levels": "2..3",
-  "prettier.proseWrap": "always",
-  "prettier.singleQuote": true,
-  "ruby.intellisense": "rubyLocate",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.external.osxExec": "Alacritty.app",
-  "terminal.integrated.commandsToSkipShell": [
-    "workbench.action.nextEditor",
-    "workbench.action.previousEditor"
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
   ],
-  "todo-tree.tree.showScanModeButton": false,
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
-  "workbench.editor.showTabs": true,
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.colorCustomizations" : {
+    "statusBar.background": "#333333",
+    "statusBar.foreground": "#999999",
+    "terminal.ansiBlack": "#666666",
+    "terminal.ansiBlue": "#569cd6",
+    "terminal.ansiCyan": "#4ec9b0",
+    "terminal.ansiGreen": "#6a9955",
+    "terminal.ansiMagenta": "#d670d6",
+    "terminal.ansiRed": "#f44747",
+    "terminal.ansiWhite": "#c8c8c8",
+    "terminal.ansiYellow": "#ffd700",
+    "terminal.ansiBrightBlack": "#666666",
+    "terminal.ansiBrightBlue": "#569cd6",
+    "terminal.ansiBrightCyan": "#4ec9b0",
+    "terminal.ansiBrightGreen": "#6a9955",
+    "terminal.ansiBrightMagenta": "#d670d6",
+    "terminal.ansiBrightRed": "#f44747",
+    "terminal.ansiBrightWhite": "#c8c8c8",
+    "terminal.ansiBrightYellow": "#ffd700",
+    "terminal.selectionBackground": "#999999"
+  },
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
-  "workbench.tree.renderIndentGuides": "always",
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

@@ -15,30 +15,30 @@ mouse:
 
 colors:
   primary:
-    background: "#1e1e1e"
+    background: '#1e1e1e'
   selection:
-    background: "#565656"
+    background: '#3a3d41'
   cursor:
-    text: "#000000"
-    cursor: "#ffcb6b"
-  normal:
-    black: "#000000"
-    blue: "#82aaff"
-    cyan: "#89ddff"
-    green: "#c3e88d"
-    magenta: "#c792ea"
-    red: "#ff5370"
-    white: "#ffffff"
-    yellow: "#ffcb6b"
+    text: '#000000'
+    cursor: '#ffcb6b'
   bright:
-    black: "#4a4a4a"
-    blue: "#82aaff"
-    cyan: "#89ddff"
-    green: "#c3e88d"
-    magenta: "#c792ea"
-    red: "#ff5370"
-    white: "#ffffff"
-    yellow: "#ffcb6b"
+    black: '#666666'
+    blue: '#569cd6'
+    cyan: '#4ec9b0'
+    green: '#6a9955'
+    magenta: '#d670d6'
+    red: '#f44747'
+    white: '#c8c8c8'
+    yellow: '#ffd700'
+  normal:
+    black: '#666666'
+    blue: '#569cd6'
+    cyan: '#4ec9b0'
+    green: '#6a9955'
+    magenta: '#d670d6'
+    red: '#f44747'
+    white: '#c8c8c8'
+    yellow: '#ffd700'
 
 key_bindings:
   - { mods: Command, key: Back, chars: "\x15" } # delete line

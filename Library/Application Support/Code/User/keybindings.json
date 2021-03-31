@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
   {
     // Switch tab (right)
@@ -11,57 +10,27 @@
     "command": "workbench.action.previousEditor"
   },
   {
-    // Ctrl+` toggle terminal and editor focus
-    "key": "ctrl+`",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    // Open terminal in current file's directory
-    "key": "ctrl+.",
-    "command": "terminalHere.create"
-  },
-  {
-    // Prevent cmd+w from closing empty window
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow",
-    "when": "!editorIsOpen && !multipleEditorGroups"
   },
   {
-    // Cmd+0 resets zoom
     "key": "cmd+0",
     "command": "workbench.action.zoomReset"
   },
   {
-    // Toggle focus sidebar & editor
-    "key": "cmd+e",
-    "command": "workbench.action.focusSideBar"
+    "key": "cmd+ctrl+p",
+    "command": "copyRelativeFilePath"
   },
   {
-    // Toggle focus editor & sidebar
-    "key": "cmd+e",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!editorFocus"
-  },
-  {
-    // Find and replace within file
-    "key": "cmd+h",
-    "command": "editor.action.startFindReplaceAction"
-  },
-  {
-    "key": "alt+cmd+f",
-    "command": "-editor.action.startFindReplaceAction"
-  },
-  {
-    "key": "cmd+alt+n",
+    "key": "cmd+n",
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+cmd+c",
-    "command": "copyFilePath"
+    "key": "shift+cmd+n",
+    "command": "explorer.newFolder"
   },
   {
-    "key": "ctrl+cmd+r",
-    "command": "copyRelativeFilePath"
-  },
+    "key": "alt+cmd+n",
+    "command": "workbench.action.files.newUntitledFile"
+  }
 ]

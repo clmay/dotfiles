@@ -4,13 +4,14 @@
 # Shell setup
 # ===========
 export CLICOLOR=1
-export WORDCHARS=''
+export WORDCHARS='&'
 
 # zsh
 # ---
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
 autoload -Uz compinit && compinit
 setopt auto_cd
+setopt hist_ignore_all_dups
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
 # case-insensitive matching in  completions
@@ -27,18 +28,21 @@ eval "$(starship init zsh)"
 # ---
 alias ga='git add'
 alias gb='git branch'
-alias gd='git diff'
-alias gl='git log'
-alias gp='git push'
-alias gr='git reset'
-alias gs='git status'
-alias gbd='git branch -d'
+alias gbd='git branch -D'
 alias gcb='git checkout -b'
 alias gcl='git clone'
 alias gcm='git commit -m'
 alias gco='git checkout'
+alias gcom='git checkout master'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git log'
+alias gmm='git merge master'
+alias gp='git push'
 alias gpl='git pull'
 alias gps='git push --set-upstream origin HEAD'
+alias gr='git reset'
+alias gs='git status'
 
 grh() {
   git reset --hard HEAD~"$@"
@@ -63,7 +67,7 @@ dsrm() {
 
 # Confluent
 # ---------
-export CONFLUENT_HOME=$HOME/.bin/confluent-6.0.0
+export CONFLUENT_HOME="$HOME/.confluent/6.0.0"
 export PATH="$PATH:$CONFLUENT_HOME/bin"
 
 # Go
@@ -82,10 +86,10 @@ export VISUAL="/usr/local/bin/code"
 
 # Secrets
 # -------
-. ~/.secrets
+source ~/.secrets
 
 # asdf (must go at end)
 # ---------------------
-. /usr/local/opt/asdf/asdf.sh
+source /usr/local/opt/asdf/asdf.sh
 eval "$(asdf exec direnv hook zsh)"
 direnv() { asdf exec direnv "$@"; }

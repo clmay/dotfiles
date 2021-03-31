@@ -1,0 +1,15 @@
+[user]
+name = Chase May
+email = chaseloganmay@gmail.com
+
+[color]
+ui = auto
+
+[core]
+excludesfile = ~/.config/git/global.gitignore
+
+[alias]
+conflicts = diff --check
+
+[includeIf "gitdir/i:~/Projects/"]
+path = ~/.config/git/mastery/.gitconfig
