@@ -1,6 +1,5 @@
-[user]
-name = Chase May
-email = chaseloganmay@gmail.com
+[alias]
+conflicts = diff --check
 
 [color]
 ui = auto
@@ -8,8 +7,12 @@ ui = auto
 [core]
 excludesfile = ~/.config/git/global.gitignore
 
-[alias]
-conflicts = diff --check
+[pull]
+rebase = false
+
+[user]
+name = Chase May
+email = chaseloganmay@gmail.com
 
 [includeIf "gitdir/i:~/Projects/"]
 path = ~/.config/git/mastery/.gitconfig
