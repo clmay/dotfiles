@@ -1,5 +1,6 @@
 direnv 2.27.0
 helm 3.5.0
+java openjdk-14.0.2
 k6 0.29.0
 kubectl 1.20.2
 nodejs 15.7.0
