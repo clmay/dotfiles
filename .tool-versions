@@ -1,8 +1,9 @@
 direnv 2.27.0
+golang 1.16.3
 helm 3.5.0
 java openjdk-14.0.2
 k6 0.29.0
 kubectl 1.20.2
 nodejs 15.7.0
-yarn 1.22.10
 ruby 3.0.0
+yarn 1.22.10
