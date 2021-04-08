@@ -1,14 +1,10 @@
-bungcip.better-toml
 christian-kohler.path-intellisense
 CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 eamodio.gitlens
-EditorConfig.EditorConfig
 esbenp.prettier-vscode
 foxundermoon.shell-format
 golang.go
-Gruntfuggly.todo-tree
-kumar-harsh.graphql-for-vscode
 mechatroner.rainbow-csv
 mikestead.dotenv
 ms-azuretools.vscode-docker
@@ -19,5 +15,4 @@ redhat.vscode-xml
 redhat.vscode-yaml
 ritwickdey.LiveServer
 rust-lang.rust
-tiehuis.zig
 ue.alphabetical-sorter
