@@ -19,8 +19,10 @@
     "**/.git": false
   },
   "files.trimTrailingWhitespace": true,
+  "go.toolsManagement.autoUpdate": true,
   "html.format.wrapLineLength": 80,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.proseWrap": "always",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.external.osxExec": "Alacritty.app",
