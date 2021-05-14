@@ -7,3 +7,6 @@ style = "blue"
 
 [git_branch]
 symbol = ""
+
+[nodejs]
+format = "via [⬢ $version](bold green) "

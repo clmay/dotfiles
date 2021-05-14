@@ -1,24 +1,26 @@
-# Measure shell load time with:
 # repeat 5 { time zsh -i -c exit }
+# zmodload zsh/zprof
 
-# Shell setup
-# ===========
-export CLICOLOR=1
-export WORDCHARS='&'
-
-# zsh
-# ---
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
+
+fpath=(~/.zsh_completions $fpath)
 autoload -Uz compinit && compinit
+
 setopt auto_cd
 setopt hist_ignore_all_dups
+
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
+# ENV setup
+# =========
+export CLICOLOR=1
+export WORDCHARS='&'
+
 # Starship
-# --------
+# ========
 eval "$(starship init zsh)"
 
 # Aliases/functions
@@ -56,14 +58,14 @@ grs() {
 # --
 alias la='ls -a'
 
-# et cetera
-# ---------
+# misc
+# ----
 dsrm() {
   find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
 }
 
-# Et cetera
-# =========
+# Tooling
+# =======
 
 # Confluent
 # ---------
