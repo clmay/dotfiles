@@ -1,0 +1,9 @@
+[user]
+name = Chase May
+email = chaseloganmay@gmail.com
+
+[color]
+ui = auto
+
+[core]
+excludesfile = ~/.gitignore_global

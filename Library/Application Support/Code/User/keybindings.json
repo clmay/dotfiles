@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
   {
     // Switch tab (right)
@@ -12,7 +11,7 @@
   },
   {
     "key": "cmd+w",
-    "command": "-workbench.action.closeWindow",
+    "command": "-workbench.action.closeWindow"
   },
   {
     "key": "cmd+0",
