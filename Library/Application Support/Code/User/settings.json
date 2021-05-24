@@ -22,6 +22,7 @@
   "go.toolsManagement.autoUpdate": true,
   "html.format.wrapLineLength": 80,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.extension.toc.levels": "2..6",
   "prettier.proseWrap": "always",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
