@@ -38,6 +38,8 @@ Library/Application Support/Code/User/*
 !Library/Preferences/
 Library/Preferences/*
 
+!Library/Preferences/com.knollsoft.Rectangle.plist
+
 !Library/Preferences/TabNine
 Library/Preferences/TabNine/*
 
