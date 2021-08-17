@@ -1,5 +1,0 @@
-direnv
-helm
-k6
-kubectl
-nodejs
