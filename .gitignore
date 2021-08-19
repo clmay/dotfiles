@@ -1,46 +1,17 @@
 /*
 
-# secrets
-# -------
-.npmrc
-.secrets
-# -------
-
 !.asdfrc
 !.gitignore
-!.tool-versions
 !.zshrc
 
 !.config/
 .config/configstore/
 .config/telepresence/
 
-!.ssh/
-.ssh/*
 !.ssh/config
-
-!Library/
-Library/*
-
-!Library/Application Support/
-Library/Application Support/*
-
-!Library/Application Support/Code
-Library/Application Support/Code/*
-
-!Library/Application Support/Code/User
-Library/Application Support/Code/User/*
 
 !Library/Application\ Support/Code/User/keybindings.json
 !Library/Application\ Support/Code/User/settings.json
 !Library/Application\ Support/Code/User/snippets/
 
-!Library/Preferences/
-Library/Preferences/*
-
 !Library/Preferences/com.knollsoft.Rectangle.plist
-
-!Library/Preferences/TabNine
-Library/Preferences/TabNine/*
-
-!Library/Preferences/TabNine/tabnine_config.json
