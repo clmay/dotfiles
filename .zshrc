@@ -47,13 +47,9 @@ alias gps='git push --set-upstream origin HEAD'
 alias gr='git reset'
 alias gs='git status'
 
-grh() {
-  git reset --hard HEAD~"$@"
-}
+grh() { git reset --hard HEAD~"$@"; }
 
-grs() {
-  git reset --soft HEAD~"$@"
-}
+grs() { git reset --soft HEAD~"$@"; }
 
 # ls
 # --
@@ -62,7 +58,10 @@ alias la='ls -a'
 # misc
 # ----
 dsrm() {
-  find . -path './Library' -prune -o -path './.Trash' -prune -o -name '.DS_Store' -exec rm -f {} \;
+  find . -path './Library' \
+    -prune -o -path './.Trash' \
+    -prune -o -name '.DS_Store' \
+    -exec rm -f {} \;
 }
 
 # Tooling
@@ -79,7 +78,7 @@ export GOPATH="$HOME/.go"
 
 # Homebrew
 # --------
-export HOMEBREW_BUNDLE_FILE="~/.config/Brewfile"
+export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
