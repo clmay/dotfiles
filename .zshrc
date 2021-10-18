@@ -1,10 +1,10 @@
-# repeat 5 { time zsh -i -c exit }
-# zmodload zsh/zprof
-
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
 
 fpath=(~/.zsh_completions $fpath)
 autoload -Uz compinit && compinit
+
+autoload -U add-zsh-hook
+add-zsh-hook -Uz chpwd (){ ls -a; }
 
 setopt auto_cd
 setopt hist_ignore_all_dups
@@ -82,16 +82,10 @@ export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
+# Rust
+# ----
+. "$HOME/.cargo/env"
+
 # VS Code
 # -------
 export VISUAL="/usr/local/bin/code"
-
-# Secrets
-# -------
-source ~/.secrets
-
-# asdf (must go at end)
-# ---------------------
-source /usr/local/opt/asdf/asdf.sh
-eval "$(asdf exec direnv hook zsh)"
-direnv() { asdf exec direnv "$@"; }

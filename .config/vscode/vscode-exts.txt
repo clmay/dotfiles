@@ -1,5 +1,3 @@
-christian-kohler.path-intellisense
-CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
@@ -7,17 +5,12 @@ foxundermoon.shell-format
 golang.go
 mechatroner.rainbow-csv
 mikestead.dotenv
-misogi.ruby-rubocop
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
-ms-vsliveshare.vsliveshare
 PKief.material-icon-theme
 Prisma.prisma
-rebornix.ruby
 redhat.vscode-xml
 redhat.vscode-yaml
 ritwickdey.LiveServer
 rust-lang.rust
-ue.alphabetical-sorter
-wingrunr21.vscode-ruby
 yzhang.markdown-all-in-one
