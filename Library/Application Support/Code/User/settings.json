@@ -1,5 +1,6 @@
 {
   "debug.javascript.usePreview": true,
+  "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -84,5 +85,5 @@
   },
   "[yaml]": {
     "editor.tabSize": 2
-  }
+  },
 }
