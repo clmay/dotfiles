@@ -10,3 +10,7 @@ symbol = ""
 
 [nodejs]
 format = "via [⬢ $version](bold green) "
+
+[time]
+disabled = false
+style = "green"
