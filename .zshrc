@@ -1,12 +1,12 @@
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
 
 plugins=(zsh-completions)
+
 autoload -Uz compinit && compinit
 autoload -U add-zsh-hook
 
 setopt auto_cd
 setopt hist_ignore_all_dups
-add-zsh-hook -Uz chpwd (){ ls -a; }
 
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
