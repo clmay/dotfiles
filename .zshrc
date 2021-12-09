@@ -1,33 +1,28 @@
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
 
-fpath=(~/.zsh_completions $fpath)
+plugins=(zsh-completions)
 autoload -Uz compinit && compinit
-
 autoload -U add-zsh-hook
-add-zsh-hook -Uz chpwd (){ ls -a; }
 
 setopt auto_cd
 setopt hist_ignore_all_dups
+add-zsh-hook -Uz chpwd (){ ls -a; }
 
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-# ENV setup
-# =========
 export CLICOLOR=1
+export GOPATH="$HOME/.go"
+export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
+export HOMEBREW_BUNDLE_NO_LOCK=true
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+export VISUAL="/usr/local/bin/code"
 export WORDCHARS='&'
 
-# Starship
-# ========
 eval "$(starship init zsh)"
 
-# Aliases/functions
-# =================
-
-# git
-# ---
 alias ga='git add'
 alias gb='git branch'
 alias gbd='git branch -D'
@@ -63,29 +58,3 @@ dsrm() {
     -prune -o -name '.DS_Store' \
     -exec rm -f {} \;
 }
-
-# Tooling
-# =======
-
-# Confluent
-# ---------
-export CONFLUENT_HOME="$HOME/.confluent/6.0.0"
-export PATH="$PATH:$CONFLUENT_HOME/bin"
-
-# Go
-# ---
-export GOPATH="$HOME/.go"
-
-# Homebrew
-# --------
-export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
-export HOMEBREW_BUNDLE_NO_LOCK=true
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-
-# Rust
-# ----
-. "$HOME/.cargo/env"
-
-# VS Code
-# -------
-export VISUAL="/usr/local/bin/code"
