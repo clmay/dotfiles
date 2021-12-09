@@ -35,9 +35,9 @@
   "prettier.trailingComma": "none",
   "prettier.useTabs": false,
   "redhat.telemetry.enabled": false,
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "Alacritty.app",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorCustomizations": {
     "statusBar.background": "#333333",
