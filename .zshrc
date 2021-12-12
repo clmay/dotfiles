@@ -20,6 +20,7 @@ export VISUAL="/usr/local/bin/code"
 export WORDCHARS='&'
 
 eval "$(starship init zsh)"
+source /usr/local/opt/asdf/libexec/asdf.sh
 
 alias ga='git add'
 alias gb='git branch'
