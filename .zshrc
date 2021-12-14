@@ -11,15 +11,17 @@ zstyle ':completion:*:*:*:*:*' menu select
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
+eval "$(starship init zsh)"
+
 export CLICOLOR=1
 export GOPATH="$HOME/.go"
 export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+export PATH="$GOPATH/bin:$PATH"
 export VISUAL="/usr/local/bin/code"
 export WORDCHARS='&'
 
-eval "$(starship init zsh)"
 source /usr/local/opt/asdf/libexec/asdf.sh
 
 alias ga='git add'
