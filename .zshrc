@@ -2,6 +2,7 @@ zstyle :compinstall filename '/Users/chase.may/.zshrc'
 
 plugins=(zsh-completions)
 autoload -Uz compinit && compinit
+autoload -U add-zsh-hook add-zsh-hook -Uz chpwd() { ls -a; }
 
 setopt auto_cd
 setopt hist_ignore_all_dups
