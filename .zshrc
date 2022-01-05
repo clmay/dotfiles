@@ -1,9 +1,10 @@
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
 
-plugins=(zsh-completions)
 autoload -Uz compinit && compinit
-autoload -U add-zsh-hook add-zsh-hook -Uz chpwd() { ls -a; }
+autoload -Uz add-zsh-hook
 
+add-zsh-hook chpwd chpwd_auto_ls
+plugins=(zsh-completions)
 setopt auto_cd
 setopt hist_ignore_all_dups
 
@@ -20,7 +21,6 @@ export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export PATH="$GOPATH/bin:$PATH"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export VISUAL="/usr/local/bin/code"
 export WORDCHARS='&'
 
@@ -45,6 +45,8 @@ alias gps='git push --set-upstream origin HEAD'
 alias gr='git reset'
 alias gs='git status'
 alias la='ls -a'
+
+chpwd_auto_ls() { ls -a; }
 
 dsrm() {
   find . -path './Library' \
