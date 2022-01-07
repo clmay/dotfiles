@@ -1,17 +1,15 @@
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
-
-autoload -Uz compinit && compinit
-autoload -Uz add-zsh-hook
-
-add-zsh-hook chpwd chpwd_auto_ls
-plugins=(zsh-completions)
-setopt auto_cd
-setopt hist_ignore_all_dups
-
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+autoload -Uz compinit && compinit
+autoload -Uz add-zsh-hook
+add-zsh-hook chpwd chpwd_auto_ls
+plugins=(zsh-completions)
+setopt auto_cd
+setopt hist_ignore_all_dups
 
 eval "$(starship init zsh)"
 
