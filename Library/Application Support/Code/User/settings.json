@@ -1,5 +1,4 @@
 {
-  "debug.javascript.usePreview": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnPaste": true,
@@ -7,13 +6,12 @@
   "editor.quickSuggestionsDelay": 0,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [80, 120],
-  "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "zshrc": "shellscript"
+    ".zshrc": "shellscript"
   },
   "files.autoSave": "onFocusChange",
   "files.exclude": {
@@ -24,16 +22,13 @@
   "html.format.wrapLineLength": 80,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown.extension.toc.levels": "2..6",
-  "prettier.arrowParens": "avoid",
-  "prettier.bracketSpacing": false,
+  "prettier.arrowParens": "always",
   "prettier.printWidth": 80,
   "prettier.proseWrap": "always",
-  "prettier.quoteProps": "consistent",
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "none",
-  "prettier.useTabs": false,
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "Alacritty.app",
@@ -81,9 +76,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
     "editor.tabSize": 2
-  },
+  }
 }
