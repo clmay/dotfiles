@@ -12,7 +12,4 @@ rebase = false
 
 [user]
 name = Chase May
-email = chaseloganmay@gmail.com
-
-[includeIf "gitdir/i:~/Projects/"]
-path = ~/.config/git/mastery/.gitconfig
+email = clmay@protonmail.com
