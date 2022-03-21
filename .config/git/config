@@ -7,6 +7,9 @@ ui = auto
 [core]
 excludesfile = ~/.config/git/global.gitignore
 
+[init]
+defaultBranch = main
+
 [pull]
 rebase = false
 
