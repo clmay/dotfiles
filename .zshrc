@@ -27,6 +27,6 @@ export WORDCHARS='&'
 export PATH="$GOPATH/bin:/usr/local/sbin:$PATH"
 
 eval "$(starship init zsh)"
+
 [ -f $(brew --prefix asdf)/libexec/asdf.sh ] && echo $(brew --prefix asdf)/libexec/asdf.sh
 [ -f ~/.aliases ] && source ~/.aliases
-
