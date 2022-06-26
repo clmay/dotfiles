@@ -8,4 +8,3 @@ PKief.material-icon-theme
 redhat.vscode-yaml
 ritwickdey.LiveServer
 rust-lang.rust
-yzhang.markdown-all-in-one
