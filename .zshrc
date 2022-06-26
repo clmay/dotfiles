@@ -1,17 +1,19 @@
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
+
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
+
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 autoload -Uz compinit && compinit
 autoload -Uz add-zsh-hook
-add-zsh-hook chpwd chpwd_auto_ls
 plugins=(zsh-completions)
 setopt auto_cd
 setopt hist_ignore_all_dups
 
-eval "$(starship init zsh)"
+add-zsh-hook chpwd chpwd_auto_ls
+chpwd_auto_ls() { ls -a; }
 
 export CLICOLOR=1
 export GOPATH="$HOME/.go"
@@ -22,36 +24,7 @@ export PATH="$GOPATH/bin:/usr/local/sbin:$PATH"
 export VISUAL="/usr/local/bin/code"
 export WORDCHARS='&'
 
-source /usr/local/opt/asdf/libexec/asdf.sh
+eval "$(starship init zsh)"
+[ -f $(brew --prefix asdf)/libexec/asdf.sh ] && echo $(brew --prefix asdf)/libexec/asdf.sh
+[ -f ~/.aliases ] && source ~/.aliases
 
-alias ga='git add'
-alias gb='git branch'
-alias gbd='git branch -D'
-alias gcb='git checkout -b'
-alias gcl='git clone'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcom='git checkout main'
-alias gd='git diff'
-alias gf='git fetch'
-alias gl='git log'
-alias gm='git merge'
-alias gmm='git merge main'
-alias gp='git push'
-alias gpl='git pull'
-alias gpu='git push -u origin HEAD'
-alias gr='git reset'
-alias gs='git status'
-alias la='ls -a'
-
-chpwd_auto_ls() { ls -a; }
-
-dsrm() {
-  find . -path './Library' \
-    -prune -o -path './.Trash' \
-    -prune -o -name '.DS_Store' \
-    -exec rm -f {} \;
-}
-
-grh() { git reset --hard HEAD~"$@"; }
-grs() { git reset --soft HEAD~"$@"; }

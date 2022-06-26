@@ -1,0 +1,30 @@
+
+alias ga='git add'
+alias gb='git branch'
+alias gbd='git branch -D'
+alias gcb='git checkout -b'
+alias gcl='git clone'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gcom='git checkout main'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git log'
+alias gm='git merge'
+alias gmm='git merge main'
+alias gp='git push'
+alias gpl='git pull'
+alias gpu='git push -u origin HEAD'
+alias gr='git reset'
+alias gs='git status'
+alias la='ls -a'
+
+dsrm() {
+  find . -path './Library' \
+    -prune -o -path './.Trash' \
+    -prune -o -name '.DS_Store' \
+    -exec rm -f {} \;
+}
+
+grh() { git reset --hard HEAD~"$@"; }
+grs() { git reset --soft HEAD~"$@"; }
