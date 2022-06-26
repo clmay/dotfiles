@@ -1,3 +1,6 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+format = "$all\n$character"
+
 [character]
 success_symbol = "[➜](bold green)"
 error_symbol = "[✗](bold red)"
@@ -7,6 +10,9 @@ style = "blue"
 
 [git_branch]
 symbol = ""
+
+[line_break]
+disabled=true
 
 [nodejs]
 format = "via [⬢ $version](bold green) "
