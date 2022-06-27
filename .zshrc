@@ -29,5 +29,8 @@ export PATH="$GOPATH/bin:/usr/local/sbin:$PATH"
 
 eval "$(starship init zsh)"
 
-[ -f $(brew --prefix asdf)/libexec/asdf.sh ] && source $(brew --prefix asdf)/libexec/asdf.sh
-[ -f ~/.aliases ] && source ~/.aliases
+if [[ -f $(brew --prefix asdf)/libexec/asdf.sh ]]; then
+    source $(brew --prefix asdf)/libexec/asdf.sh
+fi
+
+if [[ -f ~/.aliases ]]; then source ~/.aliases; fi
