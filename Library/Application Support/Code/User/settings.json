@@ -1,38 +1,23 @@
 {
   "editor.bracketPairColorization.enabled": true,
-  "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.quickSuggestionsDelay": 0,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [80, 120],
-  "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "files.associations": {
-    ".zshrc": "shellscript"
-  },
   "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/.git": false
   },
   "files.trimTrailingWhitespace": true,
-  "go.toolsManagement.autoUpdate": true,
-  "html.format.wrapLineLength": 80,
+  "html.format.wrapLineLength": 120,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown.extension.toc.levels": "2..6",
-  "prettier.arrowParens": "always",
-  "prettier.printWidth": 80,
-  "prettier.proseWrap": "always",
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.tabWidth": 2,
-  "prettier.trailingComma": "none",
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "Alacritty.app",
-  "terminal.integrated.persistentSessionReviveProcess": "never",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorCustomizations": {
     "statusBar.background": "#333333",
@@ -56,29 +41,5 @@
     "terminal.selectionBackground": "#999999"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.tabSize": 2
-  }
+  "workbench.startupEditor": "none"
 }
