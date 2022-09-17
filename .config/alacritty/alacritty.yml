@@ -1,44 +1,10 @@
 window:
   padding:
-    x: 10
-    y: 0
+    x: 15
   decorations: buttonless
 
 font:
-  normal:
-    family: Monaco
   size: 12
-
-mouse:
-  hints:
-    modifiers: Command
-
-colors:
-  primary:
-    background: '#1e1e1e'
-  selection:
-    background: '#3a3d41'
-  cursor:
-    text: '#000000'
-    cursor: '#ffcb6b'
-  bright:
-    black: '#666666'
-    blue: '#569cd6'
-    cyan: '#4ec9b0'
-    green: '#6a9955'
-    magenta: '#d670d6'
-    red: '#f44747'
-    white: '#c8c8c8'
-    yellow: '#ffd700'
-  normal:
-    black: '#666666'
-    blue: '#569cd6'
-    cyan: '#4ec9b0'
-    green: '#6a9955'
-    magenta: '#d670d6'
-    red: '#f44747'
-    white: '#c8c8c8'
-    yellow: '#ffd700'
 
 key_bindings:
   - { mods: Command, key: Back, chars: "\x15" } # delete line
