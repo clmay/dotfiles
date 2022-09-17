@@ -18,10 +18,14 @@ alias gr='git reset'
 alias gs='git status'
 alias la='ls -a'
 
-dsrm() {
-  find . -path './Library' \
+clean() {
+  find . \
+    -path './Library' \
+    -path './Pictures/Photos Library.photoslibrary' \
     -prune -o -path './.Trash' \
+    -prune -o -name '.CFUserTextEncoding' \
     -prune -o -name '.DS_Store' \
+    -prune -o -name '.lesshst' \
     -exec rm -f {} \;
 }
 
