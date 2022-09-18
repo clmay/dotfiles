@@ -1,35 +1,23 @@
+autoload -Uz compinit && compinit
 zstyle :compinstall filename '/Users/chase.may/.zshrc'
-
 # enable arrow keys in completion menu
 zstyle ':completion:*:*:*:*:*' menu select
-
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-
-autoload -Uz compinit && compinit
-autoload -Uz add-zsh-hook
 plugins=(zsh-completions)
+
+autoload -Uz add-zsh-hook
+add-zsh-hook chpwd auto_ls
+auto_ls() { ls -a; }
+
 setopt auto_cd
 setopt hist_ignore_all_dups
 
-add-zsh-hook chpwd chpwd_auto_ls
-chpwd_auto_ls() { ls -a; }
-
-export CLICOLOR=1
-export GOPATH="$HOME/.go"
-export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
-export HOMEBREW_BUNDLE_NO_LOCK=true
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-export KERL_CONFIGURE_OPTIONS="--without-javac"
-export STARSHIP_CONFIG="$HOME/.config/starship/config.toml"
-export VISUAL="/usr/local/bin/code"
-export WORDCHARS='&'
-
-eval "$(starship init zsh)"
+if [[ -f ~/.aliases ]]; then source ~/.aliases; fi
 
 ASDF_EXEC="$(brew --prefix asdf)/libexec/asdf.sh"
 if [[ -f $ASDF_EXEC ]]; then
     source $ASDF_EXEC
 fi
 
-if [[ -f ~/.aliases ]]; then source ~/.aliases; fi
+eval "$(starship init zsh)"
