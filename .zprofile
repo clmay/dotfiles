@@ -1,3 +1,4 @@
+export CLICOLOR=1
 export GOPATH="$HOME/.go"
 export HOMEBREW_BUNDLE_FILE="~/.config/brew/Brewfile"
 export HOMEBREW_BUNDLE_NO_LOCK=true
