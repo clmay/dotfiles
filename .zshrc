@@ -14,6 +14,7 @@ setopt auto_cd
 setopt hist_ignore_all_dups
 
 if [[ -f ~/.aliases ]]; then source ~/.aliases; fi
+if [[ -f ~/.secrets ]]; then source ~/.secrets; fi
 
 ASDF_EXEC="$(brew --prefix asdf)/libexec/asdf.sh"
 if [[ -f $ASDF_EXEC ]]; then
