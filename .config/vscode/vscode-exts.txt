@@ -1,6 +1,5 @@
 dbaeumer.vscode-eslint
 denoland.vscode-deno
-dotenv.dotenv-vscode
 esbenp.prettier-vscode
 foxundermoon.shell-format
 mechatroner.rainbow-csv
