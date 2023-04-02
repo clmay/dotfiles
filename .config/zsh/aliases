@@ -16,18 +16,8 @@ alias gpl='git pull'
 alias gps='git push --set-upstream origin HEAD'
 alias gr='git reset'
 alias gs='git status'
-alias la='ls -a'
-
-clean() {
-  find . \
-    -path './Library' \
-    -path './Pictures/Photos Library.photoslibrary' \
-    -prune -o -path './.Trash' \
-    -prune -o -name '.CFUserTextEncoding' \
-    -prune -o -name '.DS_Store' \
-    -prune -o -name '.lesshst' \
-    -exec rm -f {} \;
-}
 
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
+
+alias la='ls -a'

@@ -13,8 +13,8 @@ auto_ls() { ls -a; }
 setopt auto_cd
 setopt hist_ignore_all_dups
 
-if [[ -f ~/.aliases ]]; then source ~/.aliases; fi
-if [[ -f ~/.secrets ]]; then source ~/.secrets; fi
+if [[ -f ~/.config/zsh/aliases ]]; then source ~/.config/zsh/aliases; fi
+if [[ -f ~/.config/zsh/secrets ]]; then source ~/.config/zsh/secrets; fi
 
 ASDF_EXEC="$(brew --prefix asdf)/libexec/asdf.sh"
 if [[ -f $ASDF_EXEC ]]; then
