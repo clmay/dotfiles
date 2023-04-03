@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# read plugins from plugins.txt and store in an array
+# read plugins from plugins.txt into an array
 plugins=()
 while read plugin; do
     plugins+=($plugin)
@@ -23,5 +23,5 @@ done
 # update asdf shims
 asdf reshim
 
-# output the list of plugins to a file
+# output the list of plugins back to the file
 asdf plugin list >~/.config/asdf/plugins.txt
