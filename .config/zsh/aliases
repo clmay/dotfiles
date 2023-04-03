@@ -17,7 +17,19 @@ alias gps='git push --set-upstream origin HEAD'
 alias gr='git reset'
 alias gs='git status'
 
+alias la='ls -a'
+
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
-alias la='ls -a'
+wu() {
+    while true; do
+        if [[ "$(date +%H)" -ge 17 ]]; then break; fi
+        cliclick m:+1,+1 m:-1,-1
+        sleep 60
+    done
+}
+
+ww() {
+    wu &
+}
