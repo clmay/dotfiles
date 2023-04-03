@@ -10,3 +10,6 @@ done <~/.config/vscode/extensions.txt
 for extension in "${extensions[@]}"; do
     code --install-extension $extension --force
 done
+
+# output the list of extensions to a file
+code --list-extensions >~/.config/vscode/extensions.txt
