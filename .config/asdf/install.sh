@@ -1,14 +1,24 @@
-#!/bin/sh
+#!/bin/bash
 
+# read plugins from plugins.txt and store in an array
+plugins=()
 while read plugin; do
-    asdf plugin add $plugin
+    plugins+=($plugin)
 done <~/.config/asdf/plugins.txt
 
+# for every plugin in the array, install it
+for plugin in "${plugins[@]}"; do
+    asdf plugin add $plugin
+done
+
+# update all plugins
 asdf plugin update --all
 
-while read plugin; do
+# install and set global version for every plugin
+for plugin in "${plugins[@]}"; do
     asdf install $plugin latest
     asdf global $plugin latest
-done <~/.config/asdf/plugins.txt
+done
 
+# update asdf shims
 asdf reshim
