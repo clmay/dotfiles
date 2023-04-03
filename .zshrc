@@ -16,6 +16,8 @@ setopt hist_ignore_all_dups
 if [[ -f ~/.config/zsh/aliases ]]; then source ~/.config/zsh/aliases; fi
 if [[ -f ~/.config/zsh/secrets ]]; then source ~/.config/zsh/secrets; fi
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ASDF_EXEC="$(brew --prefix asdf)/libexec/asdf.sh"
 if [[ -f $ASDF_EXEC ]]; then
     source $ASDF_EXEC
