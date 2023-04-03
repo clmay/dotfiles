@@ -1,13 +1,14 @@
 {
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "JetBrainsMono Nerd Font, Menlo, Monaco, Courier New, monospace",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [120],
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/.git": false
@@ -19,7 +20,7 @@
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "Alacritty.app",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 13,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorCustomizations": {
     "statusBar.background": "#333333",
