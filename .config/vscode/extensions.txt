@@ -1,4 +1,5 @@
 astro-build.astro-vscode
+bungcip.better-toml
 dbaeumer.vscode-eslint
 denoland.vscode-deno
 EditorConfig.EditorConfig
