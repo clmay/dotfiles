@@ -1,6 +1,6 @@
 window:
   padding:
-    x: 15
+    x: 20
   decorations: buttonless
 
 font:
