@@ -1,8 +1,11 @@
+cask_args appdir: "~/Applications"
+
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+
 brew "asdf"
 brew "git"
 brew "gnupg" # for asdf's `yarn`
