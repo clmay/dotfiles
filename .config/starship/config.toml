@@ -2,20 +2,19 @@
 
 format = """
 ╔════════════════════════════════════════════════════════════════════════════════
-$character$all
+║ $all
 $character
 """
 
 [character]
-success_symbol = "[║](bold green)"
-error_symbol = "[║](bold red)"
+success_symbol = "[╚](bold green)"
+error_symbol = "[╚](bold red)"
+
+[cmd_duration]
+min_time = 0
 
 [line_break]
-disabled=true
-
-[nodejs]
-format = "via [⬢ $version](bold green) "
+disabled = true
 
 [time]
 disabled = false
-style = "green"
