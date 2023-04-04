@@ -1,14 +1,16 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-╔════════════════════════════════════════════════════════════════════════════════
-║ $all
+│ $cmd_duration $time
+╰──────────────────────────────────────────────────────────────────────────────╮
+╭──────────────────────────────────────────────────────────────────────────────╯
+│ $all
 $character
 """
 
 [character]
-success_symbol = "[╚](green)"
-error_symbol = "[╚](red)"
+success_symbol = "[│](green)"
+error_symbol = "[│](red)"
 
 [cmd_duration]
 min_time = 0
