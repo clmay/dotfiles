@@ -1,19 +1,22 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+'$schema' = 'https://starship.rs/config-schema.json'
 
-format = """
-│ $cmd_duration $time
-╰──────────────────────────────────────────────────────────────────────────────╮
-╭──────────────────────────────────────────────────────────────────────────────╯
-│ $all
+format = '''
+$all$fill $cmd_duration$time
 $character
-"""
+'''
 
 [character]
-success_symbol = "[│](green)"
-error_symbol = "[│](red)"
+success_symbol = '[\$](dimmed)'
+error_symbol = '[\$](dimmed)'
 
 [cmd_duration]
+# show irrespective of duration
 min_time = 0
+
+[fill]
+# symbol = "─"
+# need this or else not displayed in Alacritty
+style = 'dimmed'
 
 [line_break]
 disabled = true
