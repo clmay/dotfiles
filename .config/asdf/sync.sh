@@ -11,11 +11,9 @@ for plugin in "${plugins[@]}"; do
     asdf plugin add $plugin
 done
 
-# update all plugins
-asdf plugin update --all
-
 # install and set global version for every plugin
 for plugin in "${plugins[@]}"; do
+    asdf plugin update $plugin
     asdf install $plugin latest
     asdf global $plugin latest
 done
