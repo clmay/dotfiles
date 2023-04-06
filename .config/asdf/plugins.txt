@@ -1,6 +1,8 @@
 deno
 elixir
 erlang
+git
 nodejs
+postgres
 ruby
 yarn
