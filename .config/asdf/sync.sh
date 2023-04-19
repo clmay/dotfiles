@@ -6,13 +6,9 @@ while read plugin; do
     plugins+=($plugin)
 done <~/.config/asdf/plugins.txt
 
-# for every plugin in the array, install it
-for plugin in "${plugins[@]}"; do
-    asdf plugin add $plugin
-done
-
 # install and set global version for every plugin
 for plugin in "${plugins[@]}"; do
+    asdf plugin add $plugin
     asdf plugin update $plugin
     asdf install $plugin latest
     asdf global $plugin latest
