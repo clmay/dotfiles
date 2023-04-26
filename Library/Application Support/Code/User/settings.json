@@ -17,6 +17,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.extension.orderedList.marker": "one",
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "Alacritty.app",
