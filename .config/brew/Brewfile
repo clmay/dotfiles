@@ -8,6 +8,7 @@ tap "homebrew/core"
 
 brew "asdf"
 brew "cliclick"
+brew "git"
 brew "gnupg" # for asdf's `yarn`
 brew "postgresql@15"
 brew "starship"
