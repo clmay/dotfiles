@@ -19,12 +19,16 @@ alias gs='git status'
 
 alias la='ls -a'
 
+alias pw='npx playwright'
+alias pwr='npx playwright show-report'
+alias pwt='npx playwright test'
+
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
 wu() {
     while true; do
-        if [[ "$(date +%H)" -ge 17 ]]; then break; fi
+        if [[ "$(date +%H)" -ge 16 ]]; then break; fi
         cliclick m:+1,+1 m:-1,-1
         sleep 60
     done
