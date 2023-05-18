@@ -1,20 +1,11 @@
 window:
   padding:
     x: 20
-  decorations: buttonless
 
 font:
   size: 14
   normal:
     family: JetBrainsMono Nerd Font
-
-colors:
-  primary:
-    background: "#1e1e1e"
-  selection:
-    background: "#3a3d41"
-  cursor:
-    text: "#000000"
 
 key_bindings:
   - { mods: Command, key: Back, chars: "\x15" } # delete line
