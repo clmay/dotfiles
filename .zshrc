@@ -1,10 +1,10 @@
-autoload -Uz compinit && compinit
-zstyle :compinstall filename '/Users/chase.may/.zshrc'
-# enable arrow keys in completion menu
-zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':compinstall' filename '/Users/chase.may/.zshrc'
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-plugins=(zsh-completions)
+# enable arrow keys in completion menu
+zstyle ':completion:*:*:*:*:*' menu select
+
+autoload -Uz compinit && compinit
 
 autoload -Uz add-zsh-hook
 add-zsh-hook chpwd auto_ls
@@ -12,6 +12,7 @@ auto_ls() { ls -a; }
 
 setopt auto_cd
 setopt hist_ignore_all_dups
+plugins=(zsh-completions)
 
 if [[ -f ~/.config/zsh/aliases ]]; then source ~/.config/zsh/aliases; fi
 if [[ -f ~/.config/zsh/secrets ]]; then source ~/.config/zsh/secrets; fi
