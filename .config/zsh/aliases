@@ -23,8 +23,7 @@ grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
 wu() {
-    while true; do
-        if [[ "$(date +%H)" -ge 17 ]]; then break; fi
+    while [ $(date "+%H") -lt 17 ]; do
         cliclick m:+1,+1 m:-1,-1
         sleep 60
     done
