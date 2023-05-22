@@ -1,7 +1,5 @@
 #!/bin/bash
 
-asdf update
-
 # read plugins from plugins.txt into an array
 plugins=()
 while read plugin; do
