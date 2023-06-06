@@ -10,16 +10,11 @@
     "command": "workbench.action.previousEditor"
   },
   {
-    // Prevent window from closing after all tabs have been closed
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow"
   },
   {
     "key": "cmd+0",
     "command": "workbench.action.zoomReset"
-  },
-  {
-    "key": "alt+cmd+p",
-    "command": "copyRelativeFilePath"
   }
 ]
