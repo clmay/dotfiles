@@ -1,6 +1,8 @@
 deno
 elixir
 erlang
+fzf
+git
 nodejs
 ruby
 yarn
