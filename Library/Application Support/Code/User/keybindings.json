@@ -19,7 +19,6 @@
   },
   {
     "key": "ctrl+cmd+p",
-    "command": "copyRelativeFilePath",
-    "when": "!editorFocus"
+    "command": "copyRelativeFilePath"
   }
 ]
