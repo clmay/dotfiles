@@ -19,7 +19,11 @@ alias gs='git status'
 
 alias la='ls -a'
 
-alias tt='npm run test && npm run report'
+alias pw='npx playwright'
+alias pwr='npx playwright show-report'
+alias pwt='npx playwright test'
+alias pwtd='pwt --debug'
+alias pwtr='pwt && pwr'
 
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
