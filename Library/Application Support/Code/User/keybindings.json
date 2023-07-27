@@ -16,5 +16,10 @@
   {
     "key": "cmd+0",
     "command": "workbench.action.zoomReset"
+  },
+  {
+    "key": "ctrl+cmd+p",
+    "command": "copyRelativeFilePath",
+    "when": "!editorFocus"
   }
 ]
