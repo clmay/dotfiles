@@ -20,6 +20,10 @@ alias gs='git status'
 
 alias la='ls -a'
 
+alias fmt='npm run fmt'
+alias lint='npm run lint'
+alias fnl='fmt && lint'
+
 alias pw='npx playwright'
 alias pwr='npx playwright show-report'
 alias pwt='npx playwright test'
