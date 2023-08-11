@@ -1,4 +1,5 @@
 alias ga='git add'
+alias gau='git add -u'
 alias gb='git branch'
 alias gbd='git branch -D'
 alias gcb='git checkout -b'
