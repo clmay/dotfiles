@@ -28,6 +28,7 @@ alias pw='npx playwright'
 alias pwr='npx playwright show-report'
 alias pwt='npx playwright test'
 alias pwtd='pwt --debug'
+alias pwth='pwt --headed'
 alias pwtr='pwt && pwr'
 
 grh() { git reset --hard HEAD~"$@"; }
