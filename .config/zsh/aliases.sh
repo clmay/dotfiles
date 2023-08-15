@@ -25,7 +25,7 @@ alias lint='npm run lint'
 alias fnl='fmt && lint'
 
 alias pw='npx playwright'
-alias pwsr='pw show-report'
+alias pwr='pw show-report'
 alias pwt='pw test'
 alias pwtd='pwt --debug'
 alias pwth='pwt --headed'
