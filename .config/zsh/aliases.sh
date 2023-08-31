@@ -20,6 +20,11 @@ alias gs='git status'
 
 alias la='ls -a'
 
+alias pwt='npx playwright test'
+alias pwtd='npx playwright test --debug'
+alias pwth='npx playwright test --headed'
+alias pwtr='npx playwright show-report'
+
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
