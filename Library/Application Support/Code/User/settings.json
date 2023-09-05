@@ -1,4 +1,6 @@
 {
+  "editor.autoClosingQuotes": "never",
+  "editor.autoClosingBrackets": "never",
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "JetBrainsMono Nerd Font, Menlo, Monaco, Courier New, monospace",
   "editor.fontSize": 13,
@@ -50,5 +52,6 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "workbench.colorTheme": "GitHub Dark Default"
 }
