@@ -30,6 +30,7 @@
     "statusBar.foreground": "#999999",
     "terminal.selectionBackground": "#999999"
   },
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "[javascript]": {
@@ -52,6 +53,5 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "workbench.colorTheme": "GitHub Dark Default"
+  }
 }
