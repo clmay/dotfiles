@@ -4,4 +4,5 @@ erlang
 fzf
 git
 nodejs
+postgres
 ruby
