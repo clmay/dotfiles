@@ -14,13 +14,8 @@ setopt auto_cd
 setopt hist_ignore_all_dups
 plugins=(zsh-completions)
 
-files=(
-    ~/.config/zsh/aliases.sh
-    ~/.config/zsh/secrets.sh
-)
-
-for file in $files; do
-    test -f $file && source $file
+for file in aliases secrets; do
+    test -f ~/.config/zsh/$file.sh && source ~/.config/zsh/$file.sh
 done
 
 if [[ $(uname -m) == "arm64" ]]; then
