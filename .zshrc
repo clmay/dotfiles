@@ -14,14 +14,14 @@ setopt auto_cd
 setopt hist_ignore_all_dups
 plugins=(zsh-completions)
 
-sources=(
+files=(
     ~/.config/zsh/aliases.sh
     ~/.config/zsh/secrets.sh
 )
 
-for source in $sources; do
-    if [[ -f $source ]]; then
-        source $source
+for file in $files; do
+    if [[ -f $file ]]; then
+        source $file
     fi
 done
 
@@ -31,9 +31,7 @@ elif [[ $(uname -m) == "x86_64" ]]; then
     eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-ASDF_EXEC="$(brew --prefix asdf)/libexec/asdf.sh"
-if [[ -f $ASDF_EXEC ]]; then
-    source $ASDF_EXEC
-fi
+ASDF_EXEC="$HOMEBREW_PREFIX/libexec/asdf.sh"
+test -f $ASDF_EXEC && source $ASDF_EXEC
 
 eval "$(starship init zsh)"
