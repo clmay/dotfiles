@@ -20,9 +20,7 @@ files=(
 )
 
 for file in $files; do
-    if [[ -f $file ]]; then
-        source $file
-    fi
+    test -f $file && source $file
 done
 
 if [[ $(uname -m) == "arm64" ]]; then
