@@ -5,10 +5,15 @@ tap "homebrew/cask-fonts"
 
 brew "asdf"
 brew "cliclick"
+brew "curl" # for asdf's `postgres`
+brew "gcc" # for asdf's `postgres`
 brew "git"
 brew "gnupg" # for asdf's `yarn`
+brew "ossp-uuid" # for asdf's `postgres`
+brew "readline" # for asdf's `postgres`
 brew "starship"
 brew "wxwidgets" # for asdf's `erlang`
+brew "zlib" # for asdf's `postgres`
 brew "zsh-completions"
 
 cask "affinity-publisher"
@@ -31,24 +36,3 @@ cask "slack"
 cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
-
-vscode "astro-build.astro-vscode"
-vscode "dbaeumer.vscode-eslint"
-vscode "denoland.vscode-deno"
-vscode "esbenp.prettier-vscode"
-vscode "foxundermoon.shell-format"
-vscode "GitHub.copilot"
-vscode "GitHub.github-vscode-theme"
-vscode "GrapeCity.gc-excelviewer"
-vscode "GraphQL.vscode-graphql"
-vscode "GraphQL.vscode-graphql-syntax"
-vscode "mechatroner.rainbow-csv"
-vscode "mikestead.dotenv"
-vscode "ms-playwright.playwright"
-vscode "ms-vsliveshare.vsliveshare"
-vscode "PKief.material-icon-theme"
-vscode "ritwickdey.LiveServer"
-vscode "stkb.rewrap"
-vscode "tamasfe.even-better-toml"
-vscode "Tyriar.sort-lines"
-vscode "yzhang.markdown-all-in-one"
