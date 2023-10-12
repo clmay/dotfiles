@@ -1,8 +1,0 @@
-deno
-elixir
-erlang
-fzf
-git
-nodejs
-postgres
-ruby
