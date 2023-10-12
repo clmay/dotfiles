@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install and set global version for every plugin
-for plugin in deno elixir erlang fzf git nodejs postgres ruby; do
+for plugin in deno elixir erlang nodejs ruby; do
     echo "Working on \`$plugin\`..."
     asdf plugin add $plugin
     asdf plugin update $plugin
