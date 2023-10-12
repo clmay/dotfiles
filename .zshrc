@@ -24,7 +24,5 @@ elif [[ $(uname -m) == "x86_64" ]]; then
     eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-ASDF_EXEC="$HOMEBREW_PREFIX/libexec/asdf.sh"
-test -f $ASDF_EXEC && source $ASDF_EXEC
-
+source $(brew --prefix asdf)/libexec/asdf.sh
 eval "$(starship init zsh)"
