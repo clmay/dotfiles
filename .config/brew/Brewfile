@@ -5,15 +5,10 @@ tap "homebrew/cask-fonts"
 
 brew "asdf"
 brew "cliclick"
-brew "curl" # for asdf's `postgres`
-brew "gcc" # for asdf's `postgres`
+brew "fzf"
 brew "git"
-brew "gnupg" # for asdf's `yarn`
-brew "ossp-uuid" # for asdf's `postgres`
-brew "readline" # for asdf's `postgres`
 brew "starship"
 brew "wxwidgets" # for asdf's `erlang`
-brew "zlib" # for asdf's `postgres`
 brew "zsh-completions"
 
 cask "affinity-publisher"
