@@ -5,10 +5,12 @@ tap "homebrew/cask-fonts"
 
 brew "asdf"
 brew "cliclick"
+brew "coreutils" # dependency: asdf
+brew "curl" # dependency: asdf
 brew "fzf"
-brew "git"
+brew "git" # dependency: asdf
 brew "starship"
-brew "wxwidgets" # for asdf's `erlang`
+brew "wxwidgets" # dependency: asdf-erlang
 brew "zsh-completions"
 
 cask "affinity-publisher"
