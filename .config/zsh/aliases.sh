@@ -29,13 +29,11 @@ gbd() { git branch --list "$@*" | xargs -r git branch -D; }
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
-wu() {
-    while [ $(date "+%H") -lt 17 ]; do
-        cliclick m:+1,+1 m:-1,-1
-        sleep 60
-    done
-}
-
 ww() {
-    wu &
+    while true; do
+        if [ $(date "+%H") -ge 7 ] && [ $(date "+%H") -lt 17 ]; then
+            cliclick m:+1,+1 m:-1,-1
+            sleep 60
+        fi
+    done &
 }
