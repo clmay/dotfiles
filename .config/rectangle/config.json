@@ -49,6 +49,12 @@
     "disabledApps" : {
 
     },
+    "doubleClickTitleBar" : {
+      "int" : 0
+    },
+    "doubleClickTitleBarRestore" : {
+      "int" : 0
+    },
     "dragFromStage" : {
       "int" : 0
     },
@@ -78,6 +84,9 @@
     },
     "hideMenubarIcon" : {
       "bool" : false
+    },
+    "ignoreDragSnapToo" : {
+      "int" : 0
     },
     "ignoredSnapAreas" : {
       "int" : 0
@@ -181,6 +190,9 @@
     "SUEnableAutomaticChecks" : {
       "bool" : true
     },
+    "systemWideMouseDown" : {
+      "int" : 0
+    },
     "todo" : {
       "int" : 0
     },
@@ -257,11 +269,11 @@
     },
     "nextDisplay" : {
       "keyCode" : 124,
-      "modifierFlags" : 1835008
+      "modifierFlags" : 917504
     },
     "previousDisplay" : {
       "keyCode" : 123,
-      "modifierFlags" : 1835008
+      "modifierFlags" : 917504
     },
     "reflowTodo" : {
       "keyCode" : 45,
@@ -276,5 +288,5 @@
       "modifierFlags" : 786432
     }
   },
-  "version" : "75"
+  "version" : "80"
 }

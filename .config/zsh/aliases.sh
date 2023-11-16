@@ -33,7 +33,7 @@ ww() {
     while true; do
         if [ $(date +%H) -ge 7 ] && [ $(date +%H) -lt 17 ]; then
             cliclick m:+1,+1 m:-1,-1
-            sleep 60
+            sleep 59
         fi
     done &
 }
