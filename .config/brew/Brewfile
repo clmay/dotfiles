@@ -15,7 +15,6 @@ brew "zsh-completions"
 
 cask "affinity-publisher"
 cask "alacritty"
-cask "audacity"
 cask "bitwarden"
 cask "docker"
 cask "firefox"
