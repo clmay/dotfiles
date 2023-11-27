@@ -37,3 +37,10 @@ ww() {
         fi
     done &
 }
+
+wa() {
+    while true; do
+        cliclick m:+1,+1 m:-1,-1
+        sleep 59
+    done &
+}
