@@ -31,16 +31,9 @@ grs() { git reset --soft HEAD~"$@"; }
 
 ww() {
     while true; do
-        if [ $(date +%H) -ge 7 ] && [ $(date +%H) -lt 17 ]; then
-            cliclick m:+1,+1 m:-1,-1
+        if [ $(date +%H) -lt 17 ]; then
+            cliclick m:+0,+0
             sleep 59
         fi
-    done &
-}
-
-wa() {
-    while true; do
-        cliclick m:+1,+1 m:-1,-1
-        sleep 59
     done &
 }
