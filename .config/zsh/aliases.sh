@@ -18,6 +18,7 @@ alias gr='git reset'
 alias gs='git status'
 
 alias la='ls -a'
+alias ll='ls -l'
 
 alias pwt='npx playwright test'
 alias pwtd='npx playwright test --debug'
