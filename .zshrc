@@ -8,7 +8,7 @@ autoload -Uz compinit && compinit
 
 autoload -Uz add-zsh-hook
 add-zsh-hook chpwd auto_ls
-auto_ls() { ls -a; }
+auto_ls() { ls -l; }
 
 setopt auto_cd
 setopt hist_ignore_all_dups
