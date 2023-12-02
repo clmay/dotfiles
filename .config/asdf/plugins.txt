@@ -1,0 +1,7 @@
+deno
+direnv
+elixir
+erlang
+fzf
+nodejs
+ruby
