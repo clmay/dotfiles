@@ -3,5 +3,6 @@ direnv
 elixir
 erlang
 fzf
+github-cli
 nodejs
 ruby
