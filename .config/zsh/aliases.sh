@@ -25,7 +25,7 @@ alias pwtd='npx playwright test --debug'
 alias pwth='npx playwright test --headed'
 alias pwtr='npx playwright show-report'
 
-gbd() { git branch --list "$@*" | xargs -r git branch -D; }
+gbd() { git branch --list "$@" | xargs -r git branch -D; }
 
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
