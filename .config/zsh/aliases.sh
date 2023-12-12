@@ -1,6 +1,7 @@
 alias ga='git add'
 alias gau='git add -u'
 alias gb='git branch'
+alias gbd='git branch -D'
 alias gcb='git checkout -b'
 alias gcl='git clone'
 alias gcm='git commit -m'
@@ -17,6 +18,13 @@ alias gps='git push --set-upstream origin HEAD'
 alias gr='git reset'
 alias gs='git status'
 
+gbda() {
+    git branch -D $(git branch | grep "$@")
+}
+
+grh() { git reset --hard HEAD~"$@"; }
+grs() { git reset --soft HEAD~"$@"; }
+
 alias la='ls -a'
 alias ll='ls -l'
 
@@ -24,11 +32,6 @@ alias pwt='npx playwright test'
 alias pwtd='npx playwright test --debug'
 alias pwth='npx playwright test --headed'
 alias pwtr='npx playwright show-report'
-
-gbd() { git branch --list "$@" | xargs -r git branch -D; }
-
-grh() { git reset --hard HEAD~"$@"; }
-grs() { git reset --soft HEAD~"$@"; }
 
 ww() {
     while true; do
