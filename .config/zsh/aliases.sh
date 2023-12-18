@@ -1,3 +1,5 @@
++x() { chmod +x "$@"; }
+
 alias ga='git add'
 alias gau='git add -u'
 alias gb='git branch'
