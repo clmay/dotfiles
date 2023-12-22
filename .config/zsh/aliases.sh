@@ -24,6 +24,16 @@ gbda() {
     git branch -D $(git branch | grep "$@")
 }
 
+gpa() {
+    for dir in ./*; do
+        if [ -d "$dir/.git" ]; then
+            cd "$dir"
+            git push
+            cd ..
+        fi
+    done
+}
+
 grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
