@@ -1,4 +1,5 @@
 git_protocol: https
 prompt: enabled
 aliases:
-  co: pr checkout
+    co: pr checkout
+version: "1"
