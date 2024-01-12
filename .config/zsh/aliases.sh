@@ -38,7 +38,7 @@ grh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
 alias la='ls -a'
-alias ll='ls -l'
+alias ll='ls -al'
 
 alias pwt='npx playwright test'
 alias pwth='npx playwright test --headed'
