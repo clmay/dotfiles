@@ -18,7 +18,6 @@ echo
 # update plugins
 echo "Updating plugins..."
 echo "==================="
-echo
 for plugin in ${plugins[@]}; do
     asdf plugin update $plugin
     echo
@@ -28,7 +27,6 @@ done
 # install latest versions of plugins
 echo "Installing latest versions..."
 echo "============================="
-echo
 for plugin in ${plugins[@]}; do
     asdf install $plugin latest
 done
