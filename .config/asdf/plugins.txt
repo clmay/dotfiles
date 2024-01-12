@@ -1,4 +1,3 @@
-deno
 direnv
 elixir
 erlang
