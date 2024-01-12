@@ -14,9 +14,8 @@ setopt auto_cd
 setopt hist_ignore_all_dups
 plugins=(zsh-completions)
 
-for file in aliases secrets; do
-    test -f ~/.config/zsh/$file.sh && source ~/.config/zsh/$file.sh
-done
+source ~/.config/zsh/aliases.sh
+test -f ~/.config/zsh/secrects.sh && source ~/.config/zsh/secrects.sh
 
 if [[ $(uname -m) = arm64 ]]; then
     eval $(/opt/homebrew/bin/brew shellenv)
@@ -27,4 +26,4 @@ fi
 eval $(starship init zsh)
 
 source $(brew --prefix asdf)/libexec/asdf.sh
-source $HOME/.config/asdf-direnv/zshrc
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" # must be last line
