@@ -41,6 +41,7 @@ alias la='ls -a'
 alias ll='ls -al'
 
 alias pwt='npx playwright test'
+alias pwtd='npx playwright test --debug'
 alias pwth='npx playwright test --headed'
 alias pwtr='npx playwright show-report'
 
