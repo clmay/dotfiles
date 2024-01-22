@@ -1,0 +1,50 @@
+import = ["/Users/chase.may/.config/alacritty/themes/themes/github_dark_default.toml"]
+
+[font]
+size = 14
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001"
+key = "Left"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0005"
+key = "Right"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001F"
+key = "Z"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Option"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Option"
+
+[window.padding]
+x = 20
