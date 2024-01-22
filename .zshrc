@@ -1,5 +1,4 @@
 autoload -Uz compinit && compinit
-autoload -Uz promptinit && promptinit
 setopt auto_cd
 setopt hist_ignore_all_dups
 
