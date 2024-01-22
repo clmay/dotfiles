@@ -15,7 +15,7 @@ setopt hist_ignore_all_dups
 plugins=(zsh-completions)
 
 source ~/.config/zsh/aliases.sh
-test -f ~/.config/zsh/secrects.sh && source ~/.config/zsh/secrects.sh
+test -f ~/.config/zsh/secrets.sh && source ~/.config/zsh/secrects.sh
 
 if [[ $(uname -m) = arm64 ]]; then
     eval $(/opt/homebrew/bin/brew shellenv)
