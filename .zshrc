@@ -8,6 +8,9 @@ zstyle ':completion:*' menu select
 setopt auto_cd
 setopt hist_ignore_all_dups
 
+PROMPT='%~ '$'\n''%# '
+precmd() { precmd() { echo; }; }
+
 source .aliases
 test -f .secrets && source .secrets
 
