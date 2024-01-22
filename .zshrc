@@ -1,12 +1,12 @@
 autoload -Uz compinit && compinit
-setopt auto_cd
-setopt hist_ignore_all_dups
-
 zstyle ':compinstall' filename '/Users/chase.may/.zshrc'
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # enable arrow keys in completion menu
 zstyle ':completion:*' menu select
+
+setopt auto_cd
+setopt hist_ignore_all_dups
 
 source .aliases
 test -f .secrets && source .secrets
