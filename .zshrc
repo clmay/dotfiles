@@ -1,3 +1,5 @@
+autoload -U colors && colors
+
 autoload -Uz compinit && compinit
 zstyle ':compinstall' filename '/Users/chase.may/.zshrc'
 # case-insensitive matching in  completions
@@ -8,8 +10,10 @@ zstyle ':completion:*' menu select
 setopt auto_cd
 setopt hist_ignore_all_dups
 
-PROMPT='%~ '$'\n''%# '
-precmd() { precmd() { echo; }; }
+setopt promptsubst
+PROMPT='%U${(r:$COLUMNS:: :)}%u%F{cyan}%2~%f'$'\n''%# '
+PROMPT2='> '
+RPROMPT='%(1j.%F{blue}+ %f.)%F{yellow}%D{'%Y-%m-%d'} %*%f —— %(0?.%F{green}OK %f.%F{red}ERR%f)'
 
 source .aliases
 test -f .secrets && source .secrets
