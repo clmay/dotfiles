@@ -11,9 +11,14 @@ setopt auto_cd
 setopt hist_ignore_all_dups
 
 setopt promptsubst
+# %U${(r:$COLUMNS:: :)}%u — print underlined spaces before prompt
+# %F{cyan}%2~%f — current directory, up to two levels deep, cyan
 PROMPT='%U${(r:$COLUMNS:: :)}%u%F{cyan}%2~%f'$'\n''%# '
 PROMPT2='> '
-RPROMPT='%(1j.%F{blue}+ %f.)%F{yellow}%D{'%Y-%m-%d'} %*%f —— %(0?.%F{green}OK %f.%F{red}ERR%f)'
+# %(1j.%F{blue}+ — if there's a background job, prints blue '+' sign
+# %F{yellow}%D{'%Y-%m-%d'} %*%f — date and time, yyyy-mm-dd H:M:s, yellow
+# %(0?.%F{green}OK %f.%F{red}ERR%f) — exit status of previous command, green 'OK' if 0, red 'ERR' otherwise
+RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%D{'%Y-%m-%d'} %*%f —— %(0?.%F{green}OK %f.%F{red}ERR%f)'
 
 source .aliases
 test -f .secrets && source .secrets
