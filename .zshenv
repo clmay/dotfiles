@@ -10,6 +10,4 @@ export HOMEBREW_NO_ANALYTICS=1
 
 export KERL_CONFIGURE_OPTIONS=--without-javac
 
-export STARSHIP_CONFIG=$HOME/.config/starship/config.toml
-
 export VISUAL=/usr/local/bin/code

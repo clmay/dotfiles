@@ -10,7 +10,6 @@ brew "coreutils" # dependency of asdf
 brew "curl" # dependency of asdf
 brew "git" # dependency of asdf
 brew "postgresql@14", restart_service: true
-brew "starship"
 brew "wxwidgets" # dependency of asdf-erlang
 brew "zsh-completions"
 

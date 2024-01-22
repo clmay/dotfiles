@@ -23,7 +23,5 @@ elif [[ $(uname -m) = x86_64 ]]; then
     eval $(/usr/local/bin/brew shellenv)
 fi
 
-eval $(starship init zsh)
-
 source $(brew --prefix asdf)/libexec/asdf.sh
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" # must be last line
