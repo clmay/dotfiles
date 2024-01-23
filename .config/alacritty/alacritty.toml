@@ -1,4 +1,6 @@
-import = ["/Users/chase.may/.config/alacritty/themes/themes/github_dark_default.toml"]
+import = [
+    "/Users/chase.may/.config/alacritty/themes/themes/github_dark_default.toml",
+]
 
 [font]
 size = 14
@@ -47,4 +49,4 @@ key = "Right"
 mods = "Option"
 
 [window.padding]
-x = 20
+x = 10
