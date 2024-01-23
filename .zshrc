@@ -20,8 +20,12 @@ PROMPT2='> '
 # %(0?.%F{green}OK %f.%F{red}ERR%f) — exit status of previous command, green 'OK' if 0, red 'ERR' otherwise
 RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%D{'%Y-%m-%d'} %*%f —— %(0?.%F{green}OK %f.%F{red}ERR%f)'
 
-source .aliases
-test -f .secrets && source .secrets
+if [[ -f ~/.aliases ]]; then
+    source ~/.aliases
+fi
+if [[ -f ~/.secrets ]]; then
+    source ~/.secrets
+fi
 
 if [[ $(uname -m) = arm64 ]]; then
     eval $(/opt/homebrew/bin/brew shellenv)
