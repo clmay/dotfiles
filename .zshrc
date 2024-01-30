@@ -11,14 +11,7 @@ setopt auto_cd
 setopt hist_ignore_all_dups
 
 setopt promptsubst
-# %U${(r:$COLUMNS:: :)}%u — print underlined spaces before prompt
-# %F{cyan}%2~%f — current directory, up to two levels deep, cyan
-PROMPT='%U${(r:$COLUMNS:: :)}%u%F{cyan}%2~%f'$'\n''%# '
-PROMPT2='> '
-# %(1j.%F{blue}+ — if there's a background job, prints blue '+' sign
-# %F{yellow}%D{'%Y-%m-%d'} %*%f — date and time, yyyy-mm-dd H:M:s, yellow
-# %(0?.%F{green}OK %f.%F{red}ERR%f) — exit status of previous command, green 'OK' if 0, red 'ERR' otherwise
-RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%D{'%Y-%m-%d'} %*%f ── %(0?.%F{green}OK %f.%F{red}ERR%f)'
+PROMPT='%F{blue}%2~%f'$'\n''%# '
 
 autoload -U add-zsh-hook
 add-zsh-hook preexec _preexec
@@ -31,9 +24,11 @@ function _preexec() {
 function _precmd() {
     if [ $t0 ]; then
         t1=$(gdate +%s%3N)
-        elapsed=$(($t1 - $t0))
-
-        export RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%D{'%Y-%m-%d'} %*%f ── %F{cyan}${elapsed}ms%f %(0?.%F{green}OK %f.%F{red}ERR%f)'
+        deltaT=$(($t1 - $t0))
+        PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f'$'\n''%# '
+        PROMPT2='> '
+        RPROMPT='%(1j.%F{blue}+%f.) %F{cyan}${deltaT}ms%f %F{yellow}%D{'%Y-%m-%d'} %*%f ── %(0?.%F{green}OK %f.%F{red}ERR%f)'
+        echo
         unset t0
     fi
 }
