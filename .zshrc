@@ -20,6 +20,24 @@ PROMPT2='> '
 # %(0?.%F{green}OK %f.%F{red}ERR%f) — exit status of previous command, green 'OK' if 0, red 'ERR' otherwise
 RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%D{'%Y-%m-%d'} %*%f —— %(0?.%F{green}OK %f.%F{red}ERR%f)'
 
+autoload -U add-zsh-hook
+add-zsh-hook preexec _preexec
+add-zsh-hook precmd _precmd
+
+function _preexec() {
+    t0=$(gdate +%s%3N)
+}
+
+function _precmd() {
+    if [ $t0 ]; then
+        t1=$(gdate +%s%3N)
+        elapsed=$(($t1 - $t0))
+
+        export RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%D{'%Y-%m-%d'} %*%f —— %F{cyan}${elapsed}ms%f %(0?.%F{green}OK %f.%F{red}ERR%f)'
+        unset t0
+    fi
+}
+
 if [[ -f ~/.aliases ]]; then
     source ~/.aliases
 fi
