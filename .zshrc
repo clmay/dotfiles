@@ -19,6 +19,7 @@ add-zsh-hook precmd _precmd
 
 function _preexec() {
     t0=$(gdate +%s%3N)
+    echo
 }
 
 function _precmd() {
