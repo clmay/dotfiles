@@ -1,5 +1,3 @@
-autoload -U colors && colors
-
 autoload -Uz compinit && compinit
 zstyle ':compinstall' filename '/Users/chase.may/.zshrc'
 # case-insensitive matching in  completions
@@ -11,9 +9,11 @@ setopt auto_cd
 setopt hist_ignore_all_dups
 
 setopt promptsubst
-PROMPT='%F{blue}%2~%f'$'\n''%# '
+PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f %(0?.%F{green}%#%f.%F{red}%#%f) '
+PROMPT2='> '
+RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%*%f'
 
-autoload -U add-zsh-hook
+autoload -Uz add-zsh-hook
 add-zsh-hook preexec _preexec
 add-zsh-hook precmd _precmd
 
@@ -25,9 +25,7 @@ function _precmd() {
     if [ $t0 ]; then
         t1=$(gdate +%s%3N)
         deltaT=$(($t1 - $t0))
-        PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f %# '
-        PROMPT2='> '
-        RPROMPT='%(1j.%F{blue}+%f.) %F{cyan}${deltaT}ms%f %F{yellow}%D{'%Y-%m-%d'} %*%f ── %(0?.%F{green}OK %f.%F{red}ERR%f)'
+        RPROMPT='%(1j.%F{blue}+%f.) %F{cyan}${deltaT}ms%f %F{yellow}%*%f'
         unset t0
     fi
 }
