@@ -19,17 +19,15 @@ add-zsh-hook precmd _precmd
 
 function _preexec() {
     t0=$(gdate +%s%3N)
-    echo
 }
 
 function _precmd() {
     if [ $t0 ]; then
         t1=$(gdate +%s%3N)
         deltaT=$(($t1 - $t0))
-        PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f'$'\n''%# '
+        PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f %# '
         PROMPT2='> '
         RPROMPT='%(1j.%F{blue}+%f.) %F{cyan}${deltaT}ms%f %F{yellow}%D{'%Y-%m-%d'} %*%f ── %(0?.%F{green}OK %f.%F{red}ERR%f)'
-        echo
         unset t0
     fi
 }
