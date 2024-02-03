@@ -1,0 +1,55 @@
+alias ga='git add'
+alias gau='git add -u'
+alias gb='git branch'
+alias gbd='git branch -D'
+alias gcb='git checkout -b'
+alias gcl='git clone'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gcom='git checkout main'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git log'
+alias gm='git merge'
+alias gmm='git merge main'
+alias gp='git push'
+alias gpl='git pull'
+alias gps='git push --set-upstream origin HEAD'
+alias gr='git reset'
+alias gs='git status'
+
+alias la='ls -a'
+alias ll='ls -al'
+
+alias pwt='npx playwright test'
+alias pwtd='npx playwright test --debug'
+alias pwth='npx playwright test --headed'
+alias pwtr='npx playwright show-report'
+
+chmx() { chmod +x "$@"; }
+
+gbda() {
+    git branch -D $(git branch | grep "$@")
+}
+
+gpa() {
+    for dir in ./*; do
+        if [ -d "$dir/.git" ]; then
+            cd "$dir"
+            git push
+            cd ..
+        fi
+    done
+}
+
+grh() { git reset --hard HEAD~"$@"; }
+grs() { git reset --soft HEAD~"$@"; }
+
+ww() {
+    while true; do
+        if [ $(date +%H) -ge 05 ] && [ $(date +%H) -lt 17 ]; then
+            cliclick m:+1,+1 m:-1,-1
+            sleep 59
+        fi
+    done &
+}
