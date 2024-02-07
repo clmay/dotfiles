@@ -11,16 +11,12 @@ brew "git" # dependency of asdf
 brew "zsh-completions"
 
 cask "alacritty"
-cask "docker"
 cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome"
 cask "maccy"
-cask "microsoft-outlook"
-cask "microsoft-teams"
 cask "rectangle"
 cask "signal"
 cask "slack"
-cask "spotify"
+cask "spotify" # Use "One-off Task: I need to execute this Terminal command with elevated privileges" to install
 cask "visual-studio-code"
-cask "zoom"
