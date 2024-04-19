@@ -1,6 +1,4 @@
-import = [
-    "/Users/chase.may/.config/alacritty/themes/themes/github_dark_default.toml",
-]
+import = ["~/.config/alacritty/themes/themes/github_dark_default.toml"]
 
 [font]
 size = 14
