@@ -17,5 +17,5 @@ cask "maccy"
 cask "microsoft-outlook"
 cask "rectangle"
 cask "slack"
-cask "spotify" # Use "One-off Task: I need to execute this Terminal command with elevated privileges" to install
+cask "spotify"
 cask "visual-studio-code"
