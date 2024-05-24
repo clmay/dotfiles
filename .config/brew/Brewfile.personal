@@ -5,6 +5,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 
 brew "asdf"
+brew "cliclick"
 brew "coreutils" # dependency of asdf
 brew "curl" # dependency of asdf
 brew "git" # dependency of asdf
