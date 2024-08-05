@@ -1,14 +1,15 @@
 cask_args appdir: "~/Applications"
 
+tap "homebrew/bundle"
 tap "homebrew/services"
 
+brew "coreutils"
 brew "asdf"
 brew "cliclick"
-brew "coreutils" # dependency of asdf
-brew "curl" # dependency of asdf
-brew "git" # dependency of asdf
+brew "curl"
+brew "git"
 brew "postgresql@14", restart_service: true
-brew "wxwidgets" # dependency of asdf-erlang
+brew "wxwidgets"
 brew "zsh-completions"
 
 cask "affinity-publisher"
@@ -26,4 +27,7 @@ cask "rectangle"
 cask "signal"
 cask "slack"
 cask "spotify"
+cask "telegram"
 cask "visual-studio-code"
+cask "workflowy"
+cask "zoom"
