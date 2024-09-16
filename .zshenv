@@ -11,7 +11,7 @@ export KERL_CONFIGURE_OPTIONS=--without-javac
 
 export VISUAL=/usr/local/bin/code
 
-if [[ $(uname -n) = L4DHJ6NQ-5e868d.local ]]; then
+if [[ $(uname -n) != clm-mac.local ]]; then
     export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.work
 else
     export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.personal
