@@ -1,4 +1,3 @@
-import = ["~/.config/alacritty/themes/themes/github_dark_default.toml"]
 
 [font]
 size = 14
@@ -48,3 +47,6 @@ mods = "Option"
 
 [window.padding]
 x = 10
+
+[general]
+import = ["~/.config/alacritty/themes/themes/github_dark_default.toml"]
