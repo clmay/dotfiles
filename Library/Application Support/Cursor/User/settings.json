@@ -1,47 +1,4 @@
 {
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.fontFamily": "JetBrainsMono Nerd Font, Menlo, Monaco, Courier New, monospace",
-  "editor.fontSize": 13,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.linkedEditing": true,
-  "editor.renderWhitespace": "boundary",
-  "editor.rulers": [120],
-  "eslint.useFlatConfig": true,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "files.associations": {
-    "Brewfile*": "ruby"
-  },
-  "files.autoSave": "onFocusChange",
-  "files.exclude": {
-    "**/.git": false
-  },
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "git.openRepositoryInParentFolders": "never",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "js/ts.implicitProjectConfig.checkJs": true,
-  "markdown.extension.orderedList.marker": "one",
-  "markdown.extension.toc.levels": "2..6",
-  "playwright.reuseBrowser": true,
-  "search.exclude": {
-    "**/.git": true
-  },
-  "terminal.external.osxExec": "Alacritty.app",
-  "terminal.integrated.fontSize": 13,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#333333",
-    "statusBar.foreground": "#999999",
-    "terminal.selectionBackground": "#999999"
-  },
-  "workbench.colorTheme": "GitHub Dark Default",
-  "workbench.editor.focusRecentEditorAfterClose": false,
-  "workbench.iconTheme": "material-icon-theme",
   "[azure-pipelines]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -76,5 +33,48 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.enableMultiLinePasteWarning": "never"
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Menlo, Monaco, Courier New, monospace",
+  "editor.fontSize": 13,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [120],
+  "eslint.useFlatConfig": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "Brewfile*": "ruby"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.openRepositoryInParentFolders": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "markdown.extension.orderedList.marker": "one",
+  "markdown.extension.toc.levels": "2..6",
+  "playwright.reuseBrowser": true,
+  "search.exclude": {
+    "**/.git": true
+  },
+  "terminal.external.osxExec": "Alacritty.app",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontSize": 13,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#333333",
+    "statusBar.foreground": "#999999",
+    "terminal.selectionBackground": "#999999"
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "workbench.iconTheme": "material-icon-theme"
 }
