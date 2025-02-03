@@ -13,7 +13,7 @@ brew "git-filter-repo"
 brew "git" # dependency of asdf
 brew "jq"
 brew "pandoc"
-brew "postgresql@16", restart_service: true
+brew "postgresql@16", restart_service: :changed
 brew "wxwidgets"
 brew "yt-dlp"
 brew "zsh-completions"
