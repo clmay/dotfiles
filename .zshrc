@@ -7,6 +7,10 @@ zstyle ':completion:*' menu select
 fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 autoload -Uz compinit && compinit
 
+setopt auto_cd
+setopt hist_ignore_all_dups
+setopt promptsubst
+
 autoload -Uz add-zsh-hook
 add-zsh-hook preexec _preexec
 add-zsh-hook precmd _precmd
@@ -23,10 +27,6 @@ function _precmd() {
         unset t0
     fi
 }
-
-setopt auto_cd
-setopt hist_ignore_all_dups
-setopt promptsubst
 
 PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f %(0?.%F{green}%#%f.%F{red}%#%f) '
 PROMPT2='> '
