@@ -1,17 +1,11 @@
-autoload -Uz compinit && compinit
 zstyle ':compinstall' filename '/Users/chase.may/.zshrc'
 # case-insensitive matching in  completions
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # enable arrow keys in completion menu
 zstyle ':completion:*' menu select
 
-setopt auto_cd
-setopt hist_ignore_all_dups
-
-setopt promptsubst
-PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f %(0?.%F{green}%#%f.%F{red}%#%f) '
-PROMPT2='> '
-RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%*%f'
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+autoload -Uz compinit && compinit
 
 autoload -Uz add-zsh-hook
 add-zsh-hook preexec _preexec
@@ -30,6 +24,14 @@ function _precmd() {
     fi
 }
 
+setopt auto_cd
+setopt hist_ignore_all_dups
+setopt promptsubst
+
+PROMPT='${(r:$COLUMNS::─:)}%F{blue}%2~%f %(0?.%F{green}%#%f.%F{red}%#%f) '
+PROMPT2='> '
+RPROMPT='%(1j.%F{blue}+%f.) %F{yellow}%*%f'
+
 if [[ -f ~/.aliases ]]; then
     source ~/.aliases
 fi
@@ -43,5 +45,5 @@ elif [[ $(uname -m) = x86_64 ]]; then
     eval $(/usr/local/bin/brew shellenv)
 fi
 
-source $(brew --prefix asdf)/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" # must be last last line
