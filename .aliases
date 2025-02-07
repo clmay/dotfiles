@@ -30,6 +30,10 @@ alias pwtr='npx playwright show-report'
 
 chmx() { chmod +x "$@"; }
 
+chpwd() {
+    ll
+}
+
 gac() {
     message="$1"
     git add "${@:2}"
