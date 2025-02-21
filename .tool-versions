@@ -2,8 +2,7 @@ deno 2.1.6
 direnv 2.35.0
 elixir 1.18.1-otp-27
 erlang 27.2
-fzf 0.53.0
 golang 1.23.4
-nodejs 23.6.0
+nodejs 23.7.0
 python 3.13.1t
 ruby 3.3.1
