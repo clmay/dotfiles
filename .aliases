@@ -31,7 +31,7 @@ alias pwtr='npx playwright show-report'
 chmx() { chmod +x "$@"; }
 
 chpwd() {
-    ll
+    la
 }
 
 gac() {
