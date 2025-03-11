@@ -1,3 +1,5 @@
+tap "homebrew/bundle"
+
 brew "asdf"
 brew "cliclick"
 brew "coreutils" # dependency of asdf
@@ -5,7 +7,6 @@ brew "curl" # dependency of asdf
 brew "git" # dependency of asdf
 brew "zsh-completions"
 
-cask "alacritty"
 cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome"
 cask "maccy"
