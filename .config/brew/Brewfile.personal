@@ -19,7 +19,6 @@ brew "wxwidgets"
 brew "yt-dlp"
 brew "zsh-completions"
 
-cask "affinity-publisher"
 cask "alacritty"
 cask "bitwarden"
 cask "calibre"
