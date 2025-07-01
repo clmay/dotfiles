@@ -6,7 +6,7 @@ export GOPATH=$HOME/.go
 export HOMEBREW_BUNDLE_INSTALL_CLEANUP=1
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_NO_ANALYTICS=1
-if [[ $(uname -n) != clm-mac.local ]]; then
+if [[ $(uname -n) == L4DHJ6NQ* ]]; then
     export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.work
 else
     export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.personal
