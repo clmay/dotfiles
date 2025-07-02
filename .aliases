@@ -54,12 +54,11 @@ grhh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
 ww() {
-    : "${WW_START_TIME:?WW_START_TIME is not set}"
-    : "${WW_END_TIME:?WW_END_TIME is not set}"
+    local end_hour="${1:-17}" # Use first argument or default to 17
 
     while true; do
         current_hour=$(date +%H)
-        if [ "$current_hour" -ge "$WW_START_TIME" ] && [ "$current_hour" -lt "$WW_END_TIME" ]; then
+        if [ "$current_hour" -lt "$end_hour" ]; then
             cliclick m:+1,+1 m:-1,-1
         fi
         sleep 59
