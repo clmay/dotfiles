@@ -54,7 +54,7 @@ grhh() { git reset --hard HEAD~"$@"; }
 grs() { git reset --soft HEAD~"$@"; }
 
 ww() {
-    local end_hour="${1:-17}" # Use first argument or default to 17
+    local end_hour=$(("${1:-5}" + 12))
 
     while true; do
         current_hour=$(date +%H)
