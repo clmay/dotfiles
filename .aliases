@@ -55,6 +55,7 @@ grs() { git reset --soft HEAD~"$@"; }
 
 ww() {
     local end_hour=$(("${1:-5}" + 12))
+    echo "Running until $end_hour:00!"
 
     while true; do
         current_hour=$(date +%H)
