@@ -1,18 +1,23 @@
 {
   "folders": [
 	{
-		"path": "clmay.github.io"
+		"name": "clm.dev",
+		"path": "clm.dev"
 	},
 	{
+		"name": "sandbox",
 		"path": "sandbox"
 	},
 	{
+		"name": "steinblick",
 		"path": "steinblick"
 	},
 	{
+		"name": "steindruck",
 		"path": "steindruck"
 	},
 	{
+		"name": "clm",
 		"path": ".."
 	}
 ]
