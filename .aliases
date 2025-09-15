@@ -53,6 +53,13 @@ grh() { git reset --hard "$@" }
 grhh() { git reset --hard HEAD~"$@" }
 grs() { git reset --soft HEAD~"$@" }
 
+rmhist() {
+    echo "Clearing history..."
+    rm -rf ~/.zsh_history
+    fc -p
+    echo "History cleared."
+}
+
 ww() {
     local end_hour=$(("${1:-5}" + 12))
     echo "Running until $end_hour:00!"
