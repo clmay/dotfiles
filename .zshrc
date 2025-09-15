@@ -8,6 +8,7 @@ fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 autoload -Uz compinit && compinit
 
 setopt auto_cd
+setopt hist_ignore_space
 setopt hist_ignore_all_dups
 setopt promptsubst
 
