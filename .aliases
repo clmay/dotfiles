@@ -49,9 +49,9 @@ gpa() {
     done
 }
 
-grh() { git reset --hard "$@"; }
-grhh() { git reset --hard HEAD~"$@"; }
-grs() { git reset --soft HEAD~"$@"; }
+grh() { git reset --hard "$@" }
+grhh() { git reset --hard HEAD~"$@" }
+grs() { git reset --soft HEAD~"$@" }
 
 ww() {
     local end_hour=$(("${1:-5}" + 12))
