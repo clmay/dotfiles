@@ -23,6 +23,12 @@ alias gs='git status'
 alias la='ls -a'
 alias ll='ls -al'
 
+brewup() {
+    brew update
+    brew bundle --upgrade
+    brew bundle cleanup -f
+}
+
 chmx() { chmod +x "$@"; }
 
 chpwd() {
