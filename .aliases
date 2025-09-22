@@ -25,7 +25,9 @@ alias ll='ls -al'
 
 brewup() {
     brew update
+    brew upgrade
     brew bundle --upgrade
+    brew cleanup --prune=all
     brew bundle cleanup -f
 }
 
