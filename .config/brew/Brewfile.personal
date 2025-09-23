@@ -7,25 +7,14 @@ brew "asdf"
 brew "cliclick"
 brew "coreutils" # dependency of asdf
 brew "curl" # dependency of asdf
-brew "exiftool"
-brew "ghostscript"
-brew "git"
-brew "git-filter-repo"
 brew "git" # dependency of asdf
-brew "jq"
-brew "pandoc"
 brew "postgresql@16", restart_service: :changed
 brew "wxwidgets"
-brew "yt-dlp"
 brew "zsh-completions"
 
 cask "alacritty"
-cask "bitwarden"
-cask "calibre"
 cask "chatgpt"
 cask "claude"
-cask "discord"
-cask "docker-desktop"
 cask "element"
 cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
