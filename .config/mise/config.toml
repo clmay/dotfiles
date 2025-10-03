@@ -1,0 +1,9 @@
+[tools]
+deno = "2"
+direnv = "latest"
+elixir = "1.18-otp-28"
+erlang = "28"
+go = "1.25"
+node = "24"
+python = "3.13"
+rust = "stable"

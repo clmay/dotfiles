@@ -3,11 +3,8 @@ cask_args appdir: "~/Applications"
 tap "homebrew/bundle"
 tap "homebrew/services"
 
-brew "asdf"
 brew "cliclick"
-brew "coreutils" # dependency of asdf
-brew "curl" # dependency of asdf
-brew "git" # dependency of asdf
+brew "mise"
 brew "postgresql@16", restart_service: :changed
 brew "wxwidgets"
 brew "zsh-completions"

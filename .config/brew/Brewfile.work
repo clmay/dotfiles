@@ -1,10 +1,7 @@
 tap "homebrew/bundle"
 
-brew "asdf"
 brew "cliclick"
-brew "coreutils" # dependency of asdf
-brew "curl" # dependency of asdf
-brew "git" # dependency of asdf
+brew "mise"
 brew "zsh-completions"
 
 cask "font-jetbrains-mono-nerd-font"
