@@ -1,4 +1,3 @@
-cask_args appdir: "~/Applications"
 
 tap "homebrew/bundle"
 tap "homebrew/services"
@@ -10,6 +9,10 @@ brew "postgresql@16", restart_service: :changed
 brew "wxwidgets"
 brew "zsh-completions"
 
+cask_args appdir: "/Applications"
+cask "proton-drive", appdir: "/Applications"
+
+cask_args appdir: "~/Applications"
 cask "alacritty"
 cask "chatgpt"
 cask "claude"
@@ -20,7 +23,6 @@ cask "google-chrome"
 cask "google-drive"
 cask "livebook"
 cask "maccy"
-cask "proton-drive"
 cask "protonvpn"
 cask "rectangle"
 cask "signal"
