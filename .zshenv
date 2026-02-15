@@ -6,7 +6,6 @@ if [[ $(uname -n) == L4DHJ6NQ* ]]; then
     export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.work
 else
     export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.personal
-    export HOMEBREW_CASK_OPTS=--appdir=~/Applications
 fi
 export HOMEBREW_NO_ANALYTICS=1
 export VISUAL=/usr/local/bin/code
