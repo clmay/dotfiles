@@ -10,7 +10,6 @@ else
 fi
 
 eval "$(mise activate zsh)"
-eval "$(direnv hook zsh)"
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.secrets ]] && source ~/.secrets
