@@ -19,7 +19,6 @@ alias gpl='git pull'
 alias gps='git push --set-upstream origin HEAD'
 alias gr='git reset'
 alias gs='git status'
-
 alias la='ls -a'
 alias ll='ls -al'
 
@@ -31,16 +30,8 @@ brewup() {
     brew bundle cleanup -f
 }
 
-chmx() { chmod +x "$@"; }
-
 chpwd() {
     la
-}
-
-gac() {
-    message="$1"
-    git add "${@:2}"
-    git commit -m "$message"
 }
 
 gbda() {
@@ -57,8 +48,7 @@ gpa() {
     done
 }
 
-grh() { git reset --hard "$@" }
-grhh() { git reset --hard HEAD~"$@" }
+grh() { git reset --hard HEAD~"$@" }
 grs() { git reset --soft HEAD~"$@" }
 
 rmhist() {
