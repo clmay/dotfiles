@@ -34,6 +34,10 @@ chpwd() {
     la
 }
 
+dsrm() {
+    find . -type d \( -name "Library" -o -name ".Trash" \) -prune -o -type f -name ".DS_Store" -exec rm {} +
+}
+
 gbda() {
     git branch -D $(git branch | grep "$@")
 }
