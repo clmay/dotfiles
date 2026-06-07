@@ -1,10 +1,4 @@
-
-tap "homebrew/bundle"
-tap "homebrew/services"
-
 brew "mise"
-brew "podman"
-brew "postgresql@16", restart_service: :changed
 brew "zsh-completions"
 
 cask_args appdir: "/Applications"
@@ -18,8 +12,8 @@ cask "claude-code"
 cask "firefox"
 cask "google-chrome"
 cask "google-drive"
-cask "livebook"
 cask "maccy"
+cask "postgres-app"
 cask "protonvpn"
 cask "rectangle"
 cask "signal"
