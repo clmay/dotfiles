@@ -2,4 +2,5 @@
 elixir = "latest"
 erlang = "latest"
 gh = "latest"
+just = "latest"
 node = "latest"
