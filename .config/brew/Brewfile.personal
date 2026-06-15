@@ -1,3 +1,6 @@
+brew "colima"
+brew "docker"
+brew "docker-compose"
 brew "mise"
 brew "zsh-completions"
 
