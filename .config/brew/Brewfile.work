@@ -4,6 +4,8 @@ brew "cliclick"
 brew "mise"
 brew "zsh-completions"
 
+cask "claude"
+cask "claude-code@latest"
 cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome"
 cask "maccy"
