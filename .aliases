@@ -39,7 +39,7 @@ brewup() (
 )
 
 chpwd() {
-    la
+    ls -a
 }
 
 dsrm() {
