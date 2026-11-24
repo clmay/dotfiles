@@ -1,9 +1,8 @@
 tap "SoftwareRat/unsigned-tap"
 
 brew "colima"
-brew "docker-compose"
-brew "docker"
 brew "mise"
+brew "podman"
 brew "zsh-completions"
 
 cask_args appdir: "/Applications"
@@ -19,6 +18,7 @@ cask "firefox"
 cask "google-chrome"
 cask "google-drive"
 cask "maccy"
+cask "podman-desktop"
 cask "postgres-app"
 cask "rectangle"
 cask "signal"
