@@ -1,24 +1,31 @@
+alias g='git'
+
 alias ga='git add'
-alias gau='git add -u'
 alias gb='git branch'
-alias gbd='git branch -D'
-alias gcb='git checkout -b'
-alias gcl='git clone'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcom='git checkout main'
 alias gd='git diff'
 alias gf='git fetch'
 alias gl='git log'
-alias gln='git log --name-status'
 alias gm='git merge'
-alias gmm='git merge main'
 alias gp='git push'
+alias gr='git reset'
+alias gs='git status'
+
+alias gaa='git add -A'
+alias gau='git add -u'
+alias gbd='git branch -D'
+alias gch='git checkout'
+alias gcl='git clone'
+alias gcm='git commit -m'
+alias gln='git log --name-status'
+alias gmm='git merge main'
 alias gpf='git push -f'
 alias gpl='git pull'
 alias gps='git push --set-upstream origin HEAD'
-alias gr='git reset'
-alias gs='git status'
+
+alias gchb='git checkout -b'
+alias gchm='git checkout main'
+alias gcma='git commit --amend --no-edit'
+
 alias la='ls -a'
 alias ll='ls -al'
 
@@ -48,7 +55,7 @@ gbda() {
     git branch -D $(git branch | grep "$@")
 }
 
-gpa() {
+gpusa() {
     for dir in ./*; do
         if [ -d "$dir/.git" ]; then
             cd "$dir"
@@ -60,6 +67,8 @@ gpa() {
 
 grh() { git reset --hard HEAD~"$@" }
 grs() { git reset --soft HEAD~"$@" }
+
+mkcd() { mkdir -p -- "$1" && cd -- "$1" }
 
 rmhist() {
     echo "Clearing history..."
