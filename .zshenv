@@ -2,9 +2,9 @@ export CLICOLOR=1
 export GOPATH=$HOME/.go
 export HOMEBREW_BUNDLE_NO_LOCK=true
 if [[ $(uname -n) == L4DHJ6NQ* ]]; then
-    export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.work
+    export HOMEBREW_BUNDLE_FILE=~/.config/homebrew/Brewfile.work
 else
-    export HOMEBREW_BUNDLE_FILE=~/.config/brew/Brewfile.personal
+    export HOMEBREW_BUNDLE_FILE=~/.config/homebrew/Brewfile.personal
 fi
 export HOMEBREW_NO_ANALYTICS=1
 export VISUAL=/usr/local/bin/code
