@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 brew "cliclick"
 brew "mise"
 brew "podman"
+brew "shfmt"
 brew "zsh-completions"
 
 cask "claude"

@@ -2,6 +2,7 @@ tap "SoftwareRat/unsigned-tap"
 
 brew "mise"
 brew "podman"
+brew "shfmt"
 brew "zsh-completions"
 
 cask_args appdir: "/Applications"
