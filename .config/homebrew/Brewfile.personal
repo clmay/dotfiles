@@ -1,6 +1,5 @@
 tap "SoftwareRat/unsigned-tap"
 
-brew "colima"
 brew "mise"
 brew "podman"
 brew "zsh-completions"
