@@ -1,3 +1,5 @@
+alias cc='claude'
+
 alias g='git'
 alias ga='git add'
 alias gaa='git add -A'
@@ -36,6 +38,31 @@ brewup() (
 		run brew bundle install &&
 		run brew bundle cleanup --force &&
 		run brew cleanup --prune=all
+)
+
+cc-init() (
+	cd "$(git rev-parse --show-toplevel 2>/dev/null)" 2>/dev/null || {
+		echo "Not in a git repo; run git init first" >&2
+		return 1
+	}
+	if [[ -e .claude/settings.local.json ]]; then
+		echo ".claude/settings.local.json already exists; merge by hand" >&2
+		return 1
+	fi
+	local exclude=$(git rev-parse --git-path info/exclude)
+	mkdir -p .claude "$(dirname "$exclude")"
+	cat >.claude/settings.local.json <<'EOF'
+{
+  "outputStyle": "Instructor",
+  "permissions": {
+    "deny": ["Edit(./**)", "Write(./**)", "NotebookEdit"]
+  }
+}
+EOF
+	for f in .claude/ CLAUDE.md AGENTS.md PLAN.md; do
+		grep -qxF "$f" "$exclude" 2>/dev/null || echo "$f" >>"$exclude"
+	done
+	echo "Instructor mode set up. Start a new Claude session to use it."
 )
 
 chpwd() {
