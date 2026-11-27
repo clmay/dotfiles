@@ -1,3 +1,6 @@
+# ElixirLS (VS Code) analysis cache
+.elixir_ls/
+
 # from https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Global/macOS.gitignore
 __MACOSX/
 .AppleDouble
